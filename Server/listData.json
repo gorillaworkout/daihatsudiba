@@ -1,0 +1,49 @@
+{
+  "list_mobil": [
+    {
+      "car_id": 1,
+      "nama_mobil": "ROCKY",
+      "harga": "178.900.000"
+    },
+    {
+      "car_id": 2,
+      "nama_mobil": "AYLA",
+      "harga": "103.300.000"
+    },
+    {
+      "car_id": 3,
+      "nama_mobil": "SIGRA",
+      "harga": "120.650.000"
+    },
+    {
+      "car_id": 4,
+      "nama_mobil": "GRAND NEW XENIA",
+      "harga": "184.500.000"
+    },
+    {
+      "car_id": 5,
+      "nama_mobil": "ALL NEW TERIOS",
+      "harga": "205.100.000"
+    },
+    {
+      "car_id": 6,
+      "nama_mobil": "ALL NEW SIRION",
+      "harga": "201.750.000"
+    },
+    {
+      "car_id": 7,
+      "nama_mobil": "LUXIO",
+      "harga": "194.300.000"
+    },
+    {
+      "car_id": 8,
+      "nama_mobil": "GRANMAX MB",
+      "harga": "165.800.000"
+    },
+    {
+      "car_id": 9,
+      "nama_mobil": "SIGRA",
+      "harga": "146.400.000"
+    }
+  ]
+}
