@@ -1,39 +1,39 @@
-import React, { useState,Component, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css'
-import bggw from '../../Assets/newbggw.png'
+// import bggw from '../../Assets/newbggw.png'
 import $ from "jquery";
-import Swal from 'sweetalert2';
-import DatePicker from "react-datepicker";
-import moment from 'moment';
+// import Swal from 'sweetalert2';
+// import DatePicker from "react-datepicker";
+// import moment from 'moment';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Dropdown from 'react-bootstrap/Dropdown'
+// import Dropdown from 'react-bootstrap/Dropdown'
 import sigra from '../../Assets/daihatsu-sigra.jpg'
 import terios from '../../Assets/daihatsu-terios.jpeg'
 import rocky from '../../Assets/daihatsu-rocky.png'
-import daihatsulogo from '../../Assets/daihatsu-logo.png'
-import advertise1 from '../../Assets/advertise-1.jpeg'
-import advertise2 from '../../Assets/advertise-2.jpeg'
-import advertise3 from '../../Assets/advertise-3.jpeg'
-import advertise4 from '../../Assets/advertise-4.jpeg'
-import xeniahome from '../../Assets/xenia-home.jpeg'
+// import daihatsulogo from '../../Assets/daihatsu-logo.png'
+// import advertise1 from '../../Assets/advertise-1.jpeg'
+// import advertise2 from '../../Assets/advertise-2.jpeg'
+// import advertise3 from '../../Assets/advertise-3.jpeg'
+// import advertise4 from '../../Assets/advertise-4.jpeg'
+// import xeniahome from '../../Assets/xenia-home.jpeg'
 import sirionhome from '../../Assets/sirion-home.jpeg'
 import terioshome from '../../Assets/terios-home.jpeg'
-
+// import { Link, Redirect } from 'react-router-dom';
 import dibaProfile from '../../Assets/diba.jpeg'
-import interiorTerios from '../../Assets/interior-terios.jpeg'
-import {FaBars} from 'react-icons/fa'
+// import interiorTerios from '../../Assets/interior-terios.jpeg'
+// import {FaBars} from 'react-icons/fa'
 import {AiOutlineWhatsApp,AiOutlineMail,AiFillTwitterCircle,AiFillFacebook
 ,AiFillInstagram,AiFillPhone,AiFillCopyrightCircle} from 'react-icons/ai'
 import "react-datepicker/dist/react-datepicker.css";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Iframe from 'react-iframe'
+import Header from '../Header/header'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
-import {Carousel} from '3d-react-carousal';
 
 
 export default function Home(){
@@ -44,31 +44,31 @@ export default function Home(){
     //     <img  src="https://picsum.photos/800/302/?random" alt="3" />  ,
     //     <img  src="https://picsum.photos/800/303/?random" alt="4" />  ,
     //     <img src="https://picsum.photos/800/304/?random" alt="5" />   ];
-    let slides = [
-        <div className="ba-1">
-            <img src={advertise1} alt=""/>
-        </div>,
-        <div className="ba-1">
-            <img src={advertise2} alt=""/>
-        </div>,
-        <div className="ba-1">
-            <img src={advertise3} alt=""/>
-        </div>,
-        <div className="ba-1">
-            <img src={advertise4} alt=""/>
-        </div>
-    ]
+    // let slides = [
+    //     <div className="ba-1">
+    //         <img src={advertise1} alt=""/>
+    //     </div>,
+    //     <div className="ba-1">
+    //         <img src={advertise2} alt=""/>
+    //     </div>,
+    //     <div className="ba-1">
+    //         <img src={advertise3} alt=""/>
+    //     </div>,
+    //     <div className="ba-1">
+    //         <img src={advertise4} alt=""/>
+    //     </div>
+    // ]
 
-    const [startDate, setStartDate] = useState(new Date());
+    // const [startDate, setStartDate] = useState(new Date());
     
-
-    const [page,setPage]= useState(1)
-    const [nama, setNama] = useState('')
-    const [jam,setJam] = useState(0)
-    const [kemana,setKemana] = useState('')
-    const [makan,setMakan] = useState('')
-    const [isPacar,setIsPacar] = useState('')
-    const [finalResult,setFinalResult] = useState('')
+// 
+    // const [page,setPage]= useState(1)
+    // const [nama, setNama] = useState('')
+    // const [jam,setJam] = useState(0)
+    // const [kemana,setKemana] = useState('')
+    // const [makan,setMakan] = useState('')
+    // const [isPacar,setIsPacar] = useState('')
+    // const [finalResult,setFinalResult] = useState('')
     const [idProduct,setIdProduct] = useState(1) 
     const [list_mobil,setList_mobil] = useState(
         {
@@ -185,7 +185,7 @@ export default function Home(){
       timer--;
     
       if (timer < 1) {
-        nextSlide();
+        // nextSlide();
         timer = _timer; // reset timer
       }
     }, 3000); // 1sec
@@ -218,12 +218,13 @@ export default function Home(){
     }
 
     const onClickProductHome=(id)=>{
-
+        console.log(id,' ini index')
         setIdProduct(id)
     }
 
     const renderProductHome=()=>{
-        if(idProduct === 1){
+        $('.list-product-car .box-car').removeClass('active-list-product')
+        if(idProduct === 0){
             return (
                 <>
                     <div className="detail-box-img-car">
@@ -243,7 +244,7 @@ export default function Home(){
                     </div>
                 </>
             )
-        }else if (idProduct === 2){
+        }else if (idProduct === 1){
             return (
                 <>
                     <div className="detail-box-img-car">
@@ -266,18 +267,21 @@ export default function Home(){
         }
     }
 
-    const settings = {
-        // dots: true,
-        infinite: true,
-        // speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay:true,
-        speed:5000,
-        autoplayspeed:5000,
-        swipetoslide:true,
-        autoWidth:true
-    }
+    // const settings = {
+    //     // dots: true,
+    //     infinite: true,
+    //     // speed: 1000,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay:true,
+    //     speed:5000,
+    //     autoplayspeed:5000,
+    //     swipetoslide:true,
+    //     autoWidth:true
+    // }
+    // <Link to={link} style={{width:"100%"}}>
+    //     <span style={{color:"white",textDecoration:"none"}}>Beli</span>
+    // </Link>
 
     const render_list_car = () =>{
         return list_mobil.list_mobil.map((val,index)=>{ 
@@ -306,90 +310,7 @@ export default function Home(){
         <>
         
             <div className="new-box-home">
-                <div className="new-header-home">
-                    <div className="bh-left" data-aos="zoom-in"  
-                        data-aos-delay="100"
-                        data-aos-duration="2000">
-                        <img src={daihatsulogo} alt=""/>
-                    </div>
-                    <div className="bh-right">
-                        <div className="bh-box-detail" 
-                        data-aos="zoom-in"
-                        data-aos-delay="100"
-                        data-aos-duration="2000"
-                        >
-                            HOME
-                        </div>
-                        <div className="bh-box-detail">
-                        <Dropdown>
-                            <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                PRODUCT
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu>
-                                <div className="dd-product">
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                    </div>
-                            </Dropdown.Menu>
-                        </Dropdown>                        
-                        </div>
-                        <div className="bh-box-detail" 
-                        data-aos="zoom-in"
-                        data-aos-delay="100"
-                        data-aos-duration="2000"
-                        >
-                            PRICE LIST
-                        </div>
-                        <div className="bh-box-detail" 
-                        data-aos="zoom-in"
-                        data-aos-delay="100"
-                        data-aos-duration="2000">
-                            EVENT
-                        </div>
-                    </div>
-                    <div className="bh-right-mobile">
-                        <FaBars id="icon-menu-bar-home"/>
-                    </div>
-                </div>
+                <Header/>
                 <div className="new-body-content ">
                     <div className="body-content-1">
                         <div className="carousel-container container">
@@ -403,8 +324,8 @@ export default function Home(){
                               <img src={terios} alt="slide" />
                             </div>                          
                             
-                            <a className="prev" onClick={prevSlide}>&#10094;</a>
-                            <a className="next" onClick={nextSlide}>&#10095;</a>
+                            <div className="prev"  onClick={prevSlide}>&#10094;</div>
+                            <div className="next" onClick={nextSlide}>&#10095;</div>
                             
                             <div className="dots-container">
                               <span className="dots" onClick={()=>currentSlide(1)}></span>
@@ -414,9 +335,9 @@ export default function Home(){
                         </div>
                     </div>
                     <div className="body-content-2" 
-                        data-aos="fade-up" 
-                        data-aos-anchor-placement="center-bottom"  
-                        data-aos-delay="2000"
+                        // data-aos="fade-up" 
+                        // data-aos-anchor-placement="center-bottom"  
+                        // data-aos-delay="2000"
                         >
                         <div className="list-product-car container"
                         >
@@ -438,7 +359,7 @@ export default function Home(){
                         <div className="bc-3-content container">
                             <div className="bc-3-box">
                                 <div className="box_for_socmed-4 hover-wa">
-                                    <a href="" target="_blank" className="a-href-link-wa">
+                                    <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiOutlineWhatsApp className="icon-wa"/>
                                         </div>
@@ -446,7 +367,7 @@ export default function Home(){
                                     </a>
                                 </div> 
                                 <div className="box_for_socmed-4 hover-email">
-                                    <a href="" target="_blank" className="a-href-link-wa">
+                                    <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiOutlineMail className="icon-wa"/>
                                         </div>
@@ -454,7 +375,7 @@ export default function Home(){
                                     </a>
                                 </div> 
                                 <div className="box_for_socmed-4 hover-twitter">
-                                    <a href="" target="_blank" className="a-href-link-wa">
+                                    <a href="#https://www.google.com" target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiFillTwitterCircle className="icon-wa"/>
                                         </div>
@@ -467,7 +388,7 @@ export default function Home(){
                             </div>
                             <div className="bc-3-box">
                                 <div className="box_for_socmed-4 hover-ig">
-                                    <a href="" target="_blank" className="a-href-link-wa">
+                                    <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiFillInstagram className="icon-wa"/>
                                         </div>
@@ -475,7 +396,7 @@ export default function Home(){
                                     </a>
                                 </div> 
                                 <div className="box_for_socmed-4 hover-fb">
-                                    <a href="" target="_blank" className="a-href-link-wa">
+                                    <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiFillFacebook className="icon-wa"/>
                                         </div>
@@ -483,7 +404,7 @@ export default function Home(){
                                     </a>
                                 </div> 
                                 <div className="box_for_socmed-4 hover-email">
-                                    <a href="" target="_blank" className="a-href-link-wa">
+                                    <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiFillPhone className="icon-wa"/>
                                         </div>
@@ -581,7 +502,7 @@ export default function Home(){
                                     <p>Jl. Perjuangan No.22, RT.9/RW.10, Kb. Jeruk, Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11530</p>
                                     <div className="bc-5-contact">
                                         <div className="box_for_socmed-5 hover-email">
-                                            <a href="" target="_blank" className="a-href-link-wa">
+                                            <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
                                                 <div className="img-logo">
                                                     <AiFillPhone className="icon-wa-2"/>
                                                 </div>
@@ -589,7 +510,7 @@ export default function Home(){
                                             </a>
                                         </div> 
                                         <div className="box_for_socmed-5 hover-wa">
-                                            <a href="" target="_blank" className="a-href-link-wa">
+                                            <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
                                                 <div className="img-logo">
                                                     <AiOutlineWhatsApp className="icon-wa-2"/>
                                                 </div>
