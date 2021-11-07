@@ -145,7 +145,7 @@ export default function Header(){
 
         <>
             <div className="new-header-home">
-                    <Link className="bh-left" to={'/home'}> 
+                    <Link className="bh-left" to={'/'}> 
 
                             <img src={daihatsulogo} alt=""/>                        
                     </Link>
