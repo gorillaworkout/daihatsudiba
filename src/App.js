@@ -16,7 +16,7 @@ function App() {
 
   return (
     <Switch>
-      <Route exact path='/home' component={Home}/>
+      <Route exact path='/' component={Home}/>
       <Route exact path='/Specification/:stringify_dp' component={Spec}/>
       <Route exact path='/header' component={Header}/>
     </Switch>
