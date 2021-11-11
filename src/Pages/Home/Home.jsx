@@ -235,18 +235,20 @@ export default function Home(){
         $('.list-product-car .box-car').removeClass('active-list-product')
         console.log(idProduct)
         console.log(list_mobil)
-        //  return list_mobil.list_mobil.forEach((val,index)=>{
-            // if(val.car_id === idProduct){
-               
+         return list_mobil.list_mobil.map((val,index)=>{
+             console.log(val)
+            if(val.car_id === idProduct){
+               console.log(val.car_id , idProduct, 'true')
                 return (
                     <>
+                    {/* <h1>testing true</h1> */}
                     <div className="detail-box-img-car" key={1}>
-                            <img src={bg_rocky} alt="" />
+                            <img src={val.background} alt="" />
                         </div>
                         <div className="detail-box-price-car">
                             <div className="price-box">
                                 <p>Harga Mulai Dari</p>
-                                <p>Rp 1000000 </p>
+                                <p>Rp {val.harga} </p>
                             </div>
                             <div className="btn-check-product">
                                 Lihat Spesifikasi
@@ -257,8 +259,11 @@ export default function Home(){
                     </div>
                     </>
                 )
-            // }
-        // })
+            }else {
+                console.log(val.car_id , idProduct, 'false')
+                return ''
+            }
+        })
   
     }
 
