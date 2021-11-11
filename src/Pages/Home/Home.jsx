@@ -249,6 +249,7 @@ export default function Home(){
                             <div className="price-box">
                                 <p>Harga Mulai Dari</p>
                                 <p>Rp {val.harga} </p>
+                                testing
                             </div>
                             <div className="btn-check-product">
                                 Lihat Spesifikasi
