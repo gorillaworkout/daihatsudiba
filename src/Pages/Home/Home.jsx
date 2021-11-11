@@ -25,6 +25,16 @@ import dibaProfile from '../../Assets/diba.jpeg'
 import {AiOutlineWhatsApp,AiOutlineMail,AiFillTwitterCircle,AiFillFacebook
 ,AiFillInstagram,AiFillPhone,AiFillCopyrightCircle} from 'react-icons/ai'
 import "react-datepicker/dist/react-datepicker.css";
+import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
+    bg_ayla,merah_ayla,full_ayla,interior_ayla,
+    bg_sigra,gray_sigra,full_sigra,interior_sigra,
+    bg_luxio,polos_luxio,full_luxio,interior_luxio,
+    bg_xenia,gray_xenia,full_xenia,interior_xenia,
+    bg_terios,gray_terios,full_terios,interior_terios,
+    bg_granmax_mb,full_granmax_mb,gray_granmax_mb,interior_granmax_mb,
+    bg_granmax_pu,gray_granmax_pu,full_granmax_pu,interior_granmax_pu,
+    bg_sirion,full_sirion,interior_sirion,gray_sirion
+    } from '../../Assets/assets' 
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -38,37 +48,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 export default function Home(){
     AOS.init();
-    // let slides = [
-    //     <img  src="https://picsum.photos/800/300/?random" alt="1" />,
-    //     <img  src="https://picsum.photos/800/301/?random" alt="2" />  ,
-    //     <img  src="https://picsum.photos/800/302/?random" alt="3" />  ,
-    //     <img  src="https://picsum.photos/800/303/?random" alt="4" />  ,
-    //     <img src="https://picsum.photos/800/304/?random" alt="5" />   ];
-    // let slides = [
-    //     <div className="ba-1">
-    //         <img src={advertise1} alt=""/>
-    //     </div>,
-    //     <div className="ba-1">
-    //         <img src={advertise2} alt=""/>
-    //     </div>,
-    //     <div className="ba-1">
-    //         <img src={advertise3} alt=""/>
-    //     </div>,
-    //     <div className="ba-1">
-    //         <img src={advertise4} alt=""/>
-    //     </div>
-    // ]
-
-    // const [startDate, setStartDate] = useState(new Date());
-    
-// 
-    // const [page,setPage]= useState(1)
-    // const [nama, setNama] = useState('')
-    // const [jam,setJam] = useState(0)
-    // const [kemana,setKemana] = useState('')
-    // const [makan,setMakan] = useState('')
-    // const [isPacar,setIsPacar] = useState('')
-    // const [finalResult,setFinalResult] = useState('')
+   
     const [idProduct,setIdProduct] = useState(1) 
     const [list_mobil,setList_mobil] = useState(
         {
@@ -76,63 +56,91 @@ export default function Home(){
               {
                 "car_id": 1,
                 "nama_mobil": "ROCKY",
+                "background":bg_rocky,
                 "harga": "178.900.000",
-                "gambar":rocky
+                "gambar_satuan":merah_rocky,
+                "interior":interior_rocky,
+                "full":kuning_rocky
               },
               {
                 "car_id": 2,
                 "nama_mobil": "AYLA",
                 "harga": "103.300.000",
-                "gambar":rocky
+                "background":bg_ayla,
+                "gambar_satuan":merah_ayla,
+                "interior":interior_ayla,
+                "full":full_ayla
               },
               {
                 "car_id": 3,
                 "nama_mobil": "SIGRA",
                 "harga": "120.650.000",
-                "gambar":rocky
+                "background":bg_sigra,
+                "gambar_satuan":gray_sigra,
+                "interior":interior_sigra,
+                "full":full_sigra
               },
               {
                 "car_id": 4,
                 "nama_mobil": "GRAND NEW XENIA",
                 "harga": "184.500.000",
-                "gambar":rocky
+                "background":bg_xenia,
+                "gambar_satuan":gray_xenia,
+                "interior":interior_xenia,
+                "full":full_xenia
               },
               {
                 "car_id": 5,
                 "nama_mobil": "ALL NEW TERIOS",
-                "harga": "205.100.000",
-                "gambar":rocky
+                "harga": "178.900.000",
+                "background":bg_terios,
+                "gambar_satuan":gray_terios,
+                "interior":interior_terios,
+                "full":full_terios
               },
               {
                 "car_id": 6,
                 "nama_mobil": "ALL NEW SIRION",
-                "harga": "201.750.000",
-                "gambar":rocky
+                "harga": "178.900.000",
+                "background":bg_sirion,
+                "gambar_satuan":gray_sirion,
+                "interior":interior_sirion,
+                "full":full_sirion
               },
               {
                 "car_id": 7,
                 "nama_mobil": "LUXIO",
                 "harga": "194.300.000",
-                "gambar":rocky
+                "background":bg_luxio,
+                "gambar_satuan":polos_luxio,
+                "interior":interior_luxio,
+                "full":full_luxio
               },
               {
                 "car_id": 8,
                 "nama_mobil": "GRANMAX MB",
                 "harga": "165.800.000",
-                "gambar":rocky
+                "background":bg_granmax_mb,
+                "gambar_satuan":gray_granmax_mb,
+                "interior":interior_granmax_mb,
+                "full":full_granmax_mb
               },
               {
                 "car_id": 9,
-                "nama_mobil": "SIGRA",
-                "harga": "146.400.000",
-                "gambar":rocky
-              }
+                "nama_mobil": "GRANMAX PI",
+                "harga": "164.800.000",
+                "background":bg_granmax_pu,
+                "gambar_satuan":gray_granmax_pu,
+                "interior":interior_granmax_pu,
+                "full":full_granmax_pu
+              },
             ]
           }
     )
+   
 
     
-    
+    //  FUNCTION FOR NEXT BEFORE IMAGE
     // Next-previous control
     let slideIndex = 0;
     function nextSlide() {
@@ -190,6 +198,7 @@ export default function Home(){
       }
     }, 3000); // 1sec
     
+    // FUNCTION FOR NEXT BEFORE IMAGE
     useEffect(()=>{
         console.log(list_mobil)
         
@@ -218,22 +227,26 @@ export default function Home(){
     }
 
     const onClickProductHome=(id)=>{
-        console.log(id,' ini index')
+        // console.log(id,' ini index')
         setIdProduct(id)
     }
 
     const renderProductHome=()=>{
         $('.list-product-car .box-car').removeClass('active-list-product')
-        if(idProduct === 0){
-            return (
-                <>
-                    <div className="detail-box-img-car">
-                            <img src={sirionhome} alt="" />
+        console.log(idProduct)
+        console.log(list_mobil)
+        //  return list_mobil.list_mobil.forEach((val,index)=>{
+            // if(val.car_id === idProduct){
+               
+                return (
+                    <>
+                    <div className="detail-box-img-car" key={1}>
+                            <img src={bg_rocky} alt="" />
                         </div>
                         <div className="detail-box-price-car">
                             <div className="price-box">
                                 <p>Harga Mulai Dari</p>
-                                <p>Rp 199.800.000</p>
+                                <p>Rp 1000000 </p>
                             </div>
                             <div className="btn-check-product">
                                 Lihat Spesifikasi
@@ -242,61 +255,30 @@ export default function Home(){
                                 Beli Sekarang
                             </div>
                     </div>
-                </>
-            )
-        }else if (idProduct === 1){
-            return (
-                <>
-                    <div className="detail-box-img-car">
-                            <img src={terioshome} alt="" />
-                        </div>
-                        <div className="detail-box-price-car">
-                            <div className="price-box">
-                                <p>Harga Mulai Dari</p>
-                                <p>Rp 199.800.000</p>
-                            </div>
-                            <div className="btn-check-product">
-                                Lihat Spesifikasi
-                            </div>
-                            <div className="btn-buy-product">
-                                Beli Sekarang
-                            </div>
-                    </div>
-                </>
-            )
-        }
+                    </>
+                )
+            // }
+        // })
+  
     }
 
-    // const settings = {
-    //     // dots: true,
-    //     infinite: true,
-    //     // speed: 1000,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     autoplay:true,
-    //     speed:5000,
-    //     autoplayspeed:5000,
-    //     swipetoslide:true,
-    //     autoWidth:true
-    // }
-    // <Link to={link} style={{width:"100%"}}>
-    //     <span style={{color:"white",textDecoration:"none"}}>Beli</span>
-    // </Link>
 
-    const render_list_car = () =>{
+
+    const render_list_car = () =>{ // render list mobil gede
+        // setIdProduct(1)
         return list_mobil.list_mobil.map((val,index)=>{ 
 
             if(index === 0){
                 return (
-                    <div className="box-car active-list-product" onClick={()=>onClickProductHome(index)}>
-                        <img src={val.gambar} alt="" className="img-option-car"/>
+                    <div className="box-car active-list-product" onClick={()=>onClickProductHome(index+1)}>
+                        <img src={val.gambar_satuan} alt="" className="img-option-car"/>
                         <p>{val.nama_mobil}</p>
                     </div>
                 )
             }else {
                 return (
-                    <div className="box-car" onClick={()=>onClickProductHome(index)}>
-                        <img src={val.gambar} alt="" className="img-option-car"/>
+                    <div className="box-car" onClick={()=>onClickProductHome(index+1)}>
+                        <img src={val.gambar_satuan} alt="" className="img-option-car"/>
                         <p>{val.nama_mobil}</p>
                    </div>
                 )
@@ -343,9 +325,7 @@ export default function Home(){
                         >
                             {render_list_car()} 
                         </div>
-                        <div className="detail-product-car container"
-                        
-                        >
+                        <div className="detail-product-car container"  >
                          {renderProductHome()}   
 
                         </div>
