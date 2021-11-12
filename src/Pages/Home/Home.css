@@ -134,7 +134,8 @@ height:550px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+
+    background-color: transparent;
 }
 .detail-box-price-car {
     width:100%;
@@ -183,6 +184,7 @@ height:550px;
     color:white;
     font-weight:700;
     transition: 0.5s;
+    text-decoration: none;
 }
 .btn-buy-product:hover{
     cursor: pointer;
@@ -681,6 +683,8 @@ height:550px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color:black;
 }
 .bh-box-detail:hover{
     cursor: pointer;

@@ -18,7 +18,7 @@ import rocky from '../../Assets/daihatsu-rocky.png'
 // import xeniahome from '../../Assets/xenia-home.jpeg'
 import sirionhome from '../../Assets/sirion-home.jpeg'
 import terioshome from '../../Assets/terios-home.jpeg'
-// import { Link, Redirect } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import dibaProfile from '../../Assets/diba.jpeg'
 // import interiorTerios from '../../Assets/interior-terios.jpeg'
 // import {FaBars} from 'react-icons/fa'
@@ -235,8 +235,10 @@ export default function Home(){
         $('.list-product-car .box-car').removeClass('active-list-product')
         console.log(idProduct)
         console.log(list_mobil)
+        var stringify_dp = ''
          return list_mobil.list_mobil.map((val,index)=>{
              console.log(val)
+             stringify_dp = val.nama_mobil
             if(val.car_id === idProduct){
                console.log(val.car_id , idProduct, 'true')
                 return (
@@ -249,14 +251,14 @@ export default function Home(){
                             <div className="price-box">
                                 <p>Harga Mulai Dari</p>
                                 <p>Rp {val.harga} </p>
-                                testing
+                                
                             </div>
                             <div className="btn-check-product">
                                 Lihat Spesifikasi
                             </div>
-                            <div className="btn-buy-product">
+                            <Link to={{pathname:`/specification/${stringify_dp}`}}  className="btn-buy-product">
                                 Beli Sekarang
-                            </div>
+                            </Link>
                     </div>
                     </>
                 )

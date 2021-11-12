@@ -150,13 +150,9 @@ export default function Header(){
                             <img src={daihatsulogo} alt=""/>                        
                     </Link>
                     <div className="bh-right">
-                        <div className="bh-box-detail" 
-                        // data-aos="zoom-in"
-                        // data-aos-delay="100"
-                        // data-aos-duration="2000"
-                        >
+                        <Link  to={'/'} className="bh-box-detail">
                             HOME
-                        </div>
+                        </Link>
                         <div className="bh-box-detail">
                         <Dropdown>
                             <Dropdown.Toggle variant="success" id="dropdown-basic">
