@@ -50,6 +50,48 @@ export default function Home(){
     AOS.init();
    
     const [idProduct,setIdProduct] = useState(1) 
+    const [gambar_mobil,setGambar_Mobil]=useState(
+        {
+            "list_gambar":[
+            
+    
+            {
+                "gambar":kuning_rocky
+            },
+            {
+                "gambar":merah_ayla
+            },
+            {
+                "gambar":gray_sigra
+            },
+            {
+                "gambar":polos_luxio
+            }
+            ,
+            {
+                "gambar":gray_xenia
+            }
+            ,
+            {
+                "gambar":gray_terios
+            }
+            ,
+            {
+                "gambar":gray_granmax_mb
+            }
+            ,
+            {
+                "gambar":gray_granmax_pu
+            }
+            ,
+            {
+                "gambar":gray_sirion
+            }
+
+            ]
+        }
+
+    )
     const [list_mobil,setList_mobil] = useState(
         {
             "list_mobil": [
@@ -164,7 +206,9 @@ export default function Home(){
     
     function showSlides() {
       let slides = document.querySelectorAll(".mySlides");
+      console.log(slides)
       let dots = document.querySelectorAll(".dots");
+      console.log(dots)
     
       if (slideIndex > slides.length - 1) slideIndex = 0;
       if (slideIndex < 0) slideIndex = slides.length - 1;
@@ -233,11 +277,11 @@ export default function Home(){
 
     const renderProductHome=()=>{
         $('.list-product-car .box-car').removeClass('active-list-product')
-        console.log(idProduct)
-        console.log(list_mobil)
+        // console.log(idProduct)
+        // console.log(list_mobil)
         var stringify_dp = ''
          return list_mobil.list_mobil.map((val,index)=>{
-             console.log(val)
+            //  console.log(val)
              stringify_dp = val.nama_mobil
             if(val.car_id === idProduct){
                console.log(val.car_id , idProduct, 'true')
@@ -295,6 +339,28 @@ export default function Home(){
         })
     }
 
+    const render_gambar_mobil_satuan=()=>{
+        console.log(gambar_mobil)
+        return gambar_mobil.list_gambar.map((val,index)=>{
+            // console.log(val.gambar)
+            return (
+                <>
+                <div className="mySlides animate">
+                    <img src={val.gambar} alt="slide" />
+                </div> 
+                </>
+            )
+        })
+        // return gambar_mobil.map((val,index)=>{
+        //     console.log(val)
+        //     return (
+        //         <>
+
+        //         </>
+        //     )
+        // })
+    }
+
     
     return (
         <>
@@ -304,7 +370,7 @@ export default function Home(){
                 <div className="new-body-content ">
                     <div className="body-content-1">
                         <div className="carousel-container container">
-                            <div className="mySlides animate">
+                            {/* <div className="mySlides animate">
                               <img src={rocky} alt="slide" />
                             </div>       
                             <div className="mySlides animate">
@@ -312,7 +378,8 @@ export default function Home(){
                             </div>
                             <div className="mySlides animate">
                               <img src={terios} alt="slide" />
-                            </div>                          
+                            </div>                           */}
+                            {render_gambar_mobil_satuan()}
                             
                             <div className="prev"  onClick={prevSlide}>&#10094;</div>
                             <div className="next" onClick={nextSlide}>&#10095;</div>
