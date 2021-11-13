@@ -20,7 +20,7 @@ export default function Event(){
                             <div className="box_img_event_1">
                                 <img src={polos_rocky} alt="" />
                             </div>
-                            <p>INI JUDUL COK HARUS PANJANG KALO BISA</p>
+                            <p>DAIHATSU AYLA SPESIAL PROMO KHUSU BULAN INI DP 7 JUTA / ANGSURAN 2,2 JUTA</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptatibus iure minus eveniet officia atque enim blanditiis, quae perferendis esse illum vel totam nihil repellat eligendi sunt, accusamus asperiores cupiditate!</p>
                         </Link>
                         <Link className="box_event_1">
