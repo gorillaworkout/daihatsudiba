@@ -47,3 +47,11 @@ export {default as bg_granmax_pu} from './GRANMAX_PU/granmax_pu_background.webp'
 export {default as gray_granmax_pu} from './GRANMAX_PU/granmax_polos.png';
 export {default as full_granmax_pu} from './GRANMAX_PU/granmax_pu_full.webp';
 export {default as interior_granmax_pu} from './GRANMAX_PU/interior_granmax_pu.webp';
+
+
+export {default as pdf_granmax_pu} from './Grandmax_PU.pdf'
+export {default as pdf_rocky} from './rocky.pdf'
+export {default as pdf_sigra} from './sigra.pdf'
+export {default as pdf_sirion} from './Sirion.pdf'
+export {default as pdf_terios} from './terios.pdf'
+export {default as pdf_xenia} from './xenia.pdf'

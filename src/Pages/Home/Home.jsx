@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css'
+import '../webversion.css'
 // import bggw from '../../Assets/newbggw.png'
 import $ from "jquery";
 // import Swal from 'sweetalert2';
@@ -10,6 +11,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import sigra from '../../Assets/daihatsu-sigra.jpg'
 import terios from '../../Assets/daihatsu-terios.jpeg'
 import rocky from '../../Assets/daihatsu-rocky.png'
+import diba_profile from '../../Assets/diba_profile.jpg'
+
 // import daihatsulogo from '../../Assets/daihatsu-logo.png'
 // import advertise1 from '../../Assets/advertise-1.jpeg'
 // import advertise2 from '../../Assets/advertise-2.jpeg'
@@ -23,7 +26,7 @@ import dibaProfile from '../../Assets/diba.jpeg'
 // import interiorTerios from '../../Assets/interior-terios.jpeg'
 // import {FaBars} from 'react-icons/fa'
 import {AiOutlineWhatsApp,AiOutlineMail,AiFillTwitterCircle,AiFillFacebook
-,AiFillInstagram,AiFillPhone,AiFillCopyrightCircle} from 'react-icons/ai'
+,AiFillInstagram,AiFillPhone,AiFillCopyrightCircle,AiFillLinkedin} from 'react-icons/ai'
 import "react-datepicker/dist/react-datepicker.css";
 import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
     bg_ayla,merah_ayla,full_ayla,interior_ayla,
@@ -33,7 +36,10 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
     bg_terios,gray_terios,full_terios,interior_terios,
     bg_granmax_mb,full_granmax_mb,gray_granmax_mb,interior_granmax_mb,
     bg_granmax_pu,gray_granmax_pu,full_granmax_pu,interior_granmax_pu,
-    bg_sirion,full_sirion,interior_sirion,gray_sirion
+    bg_sirion,full_sirion,interior_sirion,gray_sirion,
+    pdf_granmax_pu,
+    pdf_rocky,
+    pdf_sigra,pdf_sirion,pdf_terios,pdf_xenia
     } from '../../Assets/assets' 
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -102,7 +108,9 @@ export default function Home(){
                 "harga": "178.900.000",
                 "gambar_satuan":merah_rocky,
                 "interior":interior_rocky,
-                "full":kuning_rocky
+                "full":kuning_rocky,
+                "pdf":pdf_rocky
+                
               },
               {
                 "car_id": 2,
@@ -111,7 +119,8 @@ export default function Home(){
                 "background":bg_ayla,
                 "gambar_satuan":merah_ayla,
                 "interior":interior_ayla,
-                "full":full_ayla
+                "full":full_ayla,
+                "pdf":pdf_rocky                
               },
               {
                 "car_id": 3,
@@ -120,7 +129,8 @@ export default function Home(){
                 "background":bg_sigra,
                 "gambar_satuan":gray_sigra,
                 "interior":interior_sigra,
-                "full":full_sigra
+                "full":full_sigra,
+                "pdf":pdf_sigra
               },
               {
                 "car_id": 4,
@@ -129,7 +139,8 @@ export default function Home(){
                 "background":bg_xenia,
                 "gambar_satuan":gray_xenia,
                 "interior":interior_xenia,
-                "full":full_xenia
+                "full":full_xenia,
+                "pdf":pdf_xenia
               },
               {
                 "car_id": 5,
@@ -138,7 +149,8 @@ export default function Home(){
                 "background":bg_terios,
                 "gambar_satuan":gray_terios,
                 "interior":interior_terios,
-                "full":full_terios
+                "full":full_terios,
+                "pdf":pdf_terios
               },
               {
                 "car_id": 6,
@@ -147,7 +159,8 @@ export default function Home(){
                 "background":bg_sirion,
                 "gambar_satuan":gray_sirion,
                 "interior":interior_sirion,
-                "full":full_sirion
+                "full":full_sirion,
+                "pdf":pdf_sirion
               },
               {
                 "car_id": 7,
@@ -156,7 +169,8 @@ export default function Home(){
                 "background":bg_luxio,
                 "gambar_satuan":polos_luxio,
                 "interior":interior_luxio,
-                "full":full_luxio
+                "full":full_luxio,
+                "pdf":pdf_xenia
               },
               {
                 "car_id": 8,
@@ -165,7 +179,8 @@ export default function Home(){
                 "background":bg_granmax_mb,
                 "gambar_satuan":gray_granmax_mb,
                 "interior":interior_granmax_mb,
-                "full":full_granmax_mb
+                "full":full_granmax_mb,
+                "pdf":pdf_rocky
               },
               {
                 "car_id": 9,
@@ -174,7 +189,8 @@ export default function Home(){
                 "background":bg_granmax_pu,
                 "gambar_satuan":gray_granmax_pu,
                 "interior":interior_granmax_pu,
-                "full":full_granmax_pu
+                "full":full_granmax_pu,
+                "pdf":pdf_granmax_pu
               },
             ]
           }
@@ -275,6 +291,8 @@ export default function Home(){
         setIdProduct(id)
     }
 
+
+    // RENDER PRODUCT HOME
     const renderProductHome=()=>{
         $('.list-product-car .box-car').removeClass('active-list-product')
         // console.log(idProduct)
@@ -297,12 +315,16 @@ export default function Home(){
                                 <p>Rp {val.harga} </p>
                                 
                             </div>
-                            <div className="btn-check-product">
-                                Lihat Spesifikasi
-                            </div>
                             <Link to={{pathname:`/specification/${stringify_dp}`}}  className="btn-buy-product">
-                                Beli Sekarang
+                                Lihat Spesifikasi
                             </Link>
+                            <a href={`https://wa.me/+6285887854544/?text=Saya Ingin Konsultasi Mengenai Mobil`} style={{textDecoration:'none'}} target="_blank">
+                                <div className="btn-check-product">
+                                    Beli Sekarang
+                                </div>
+                            </a>
+                            
+                            
                     </div>
                     </>
                 )
@@ -313,6 +335,21 @@ export default function Home(){
         })
   
     }
+
+    const option_dots_product_home=()=>{
+        
+        return list_mobil.list_mobil.map((val,index)=>{
+            return (
+                <>
+                    <span className="dots" onClick={()=>currentSlide(index)}></span>
+                </>
+            )
+        })
+    }
+
+    // RENDER PRODUCT HOME
+
+
 
 
 
@@ -351,14 +388,6 @@ export default function Home(){
                 </>
             )
         })
-        // return gambar_mobil.map((val,index)=>{
-        //     console.log(val)
-        //     return (
-        //         <>
-
-        //         </>
-        //     )
-        // })
     }
 
     
@@ -385,9 +414,7 @@ export default function Home(){
                             <div className="next" onClick={nextSlide}>&#10095;</div>
                             
                             <div className="dots-container">
-                              <span className="dots" onClick={()=>currentSlide(1)}></span>
-                              <span className="dots" onClick={()=>currentSlide(2)}></span>
-                              <span className="dots" onClick={()=>currentSlide(3)}></span>
+                             {option_dots_product_home()}      
                             </div>
                         </div>
                     </div>
@@ -414,7 +441,7 @@ export default function Home(){
                         <div className="bc-3-content container">
                             <div className="bc-3-box">
                                 <div className="box_for_socmed-4 hover-wa">
-                                    <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
+                                    <a href={`https://wa.me/+6285887854544/?text=Saya Ingin Konsultasi Mengenai Mobil`} target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiOutlineWhatsApp className="icon-wa"/>
                                         </div>
@@ -432,9 +459,9 @@ export default function Home(){
                                 <div className="box_for_socmed-4 hover-twitter">
                                     <a href="#https://www.google.com" target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
-                                            <AiFillTwitterCircle className="icon-wa"/>
+                                            <AiFillLinkedin className="icon-wa"/>
                                         </div>
-                                        <p id="soc_youtube">Twitter</p>
+                                        <p id="soc_youtube">Linkedin</p>
                                     </a>
                                 </div> 
                             </div>
@@ -459,16 +486,18 @@ export default function Home(){
                                     </a>
                                 </div> 
                                 <div className="box_for_socmed-4 hover-email">
-                                    <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
+                                    <a href={`https://wa.me/+6285887854544/?text=Saya Ingin Konsultasi Mengenai Mobil`} target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiFillPhone className="icon-wa"/>
                                         </div>
+                                        
                                         <p id="soc_youtube">Hubungi</p>
                                     </a>
                                 </div>   
                             </div>
                         </div>
                     </div>
+                    
                     <div className="body-content-4">
                         <div className="bc-4-content">
                             <div className="bc-4-content-2 ">
@@ -546,6 +575,7 @@ export default function Home(){
                         </div>
 
                     </div>
+
                     <div className="body-content-5">
                         <div className="bc-5-content container">
                             <div className="bc-5-alamat">
@@ -557,7 +587,7 @@ export default function Home(){
                                     <p>Jl. Perjuangan No.22, RT.9/RW.10, Kb. Jeruk, Kec. Kb. Jeruk, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11530</p>
                                     <div className="bc-5-contact">
                                         <div className="box_for_socmed-5 hover-email">
-                                            <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
+                                            <a href={`https://wa.me/+6285887854544/?text=Saya Ingin Konsultasi Mengenai Mobil`}target="_blank" className="a-href-link-wa">
                                                 <div className="img-logo">
                                                     <AiFillPhone className="icon-wa-2"/>
                                                 </div>
@@ -565,7 +595,7 @@ export default function Home(){
                                             </a>
                                         </div> 
                                         <div className="box_for_socmed-5 hover-wa">
-                                            <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
+                                            <a href={`https://wa.me/+6285887854544/?text=Saya Ingin Konsultasi Mengenai Mobil`} target="_blank" className="a-href-link-wa">
                                                 <div className="img-logo">
                                                     <AiOutlineWhatsApp className="icon-wa-2"/>
                                                 </div>

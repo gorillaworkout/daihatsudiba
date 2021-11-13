@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './header.css'
 // import bggw from '../../Assets/newbggw.png'
 // import $ from "jquery";
 // import Swal from 'sweetalert2';
@@ -6,6 +7,7 @@ import React, { useEffect } from 'react';
 // import moment from 'moment';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dropdown from 'react-bootstrap/Dropdown'
+
 
 
 // import rocky from '../../Assets/daihatsu-rocky.png'
@@ -24,7 +26,7 @@ import "slick-carousel/slick/slick-theme.css";
 // import Iframe from 'react-iframe'
 // import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-
+import mobil_icon from '../../Assets/mobil_icon_mobile.png'
 import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
 bg_ayla,merah_ayla,full_ayla,interior_ayla,
 bg_sigra,gray_sigra,full_sigra,interior_sigra,
@@ -145,8 +147,20 @@ export default function Header(){
 
         <>
             <div className="new-header-home">
-                    <Link className="bh-left" to={'/'}> 
+                    <div className="img_product_mobile">
+                        <Dropdown>
+                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                <img src={mobil_icon} alt="" className="icon_mobil_mobile" />
+                            </Dropdown.Toggle>
 
+                            <Dropdown.Menu className="dropdown_menu_product">
+                                <div className="dd-product">
+                                        {render_header()}
+                                </div>
+                            </Dropdown.Menu>
+                        </Dropdown>               
+                    </div>
+                    <Link className="bh-left" to={'/'}> 
                             <img src={daihatsulogo} alt=""/>                        
                     </Link>
                     <div className="bh-right">
@@ -162,16 +176,9 @@ export default function Header(){
                             <Dropdown.Menu>
                                 <div className="dd-product">
                                         {render_header()}
-                                    </div>
+                                </div>
                             </Dropdown.Menu>
                         </Dropdown>                        
-                        </div>
-                        <div className="bh-box-detail" 
-                        // data-aos="zoom-in"
-                        // data-aos-delay="100"
-                        // data-aos-duration="2000"
-                        >
-                            PRICE LIST
                         </div>
                         <div className="bh-box-detail" 
                         // data-aos="zoom-in"
@@ -182,9 +189,23 @@ export default function Header(){
                         </div>
                     </div>
                     <div className="bh-right-mobile">
-                        <FaBars id="icon-menu-bar-home"/>
+                        
+                        <Dropdown>
+                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                <FaBars id="icon-menu-bar-home"/>
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu className="dropdown_menu_mobile">
+                                <Dropdown.Item href="#/action-1">HOME</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">PRODUCT</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">EVENT</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     </div>
-                </div>
+            </div>
+
+            
+           
 
         </>
     )
