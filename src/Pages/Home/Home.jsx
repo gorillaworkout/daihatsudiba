@@ -418,18 +418,12 @@ export default function Home(){
                             </div>
                         </div>
                     </div>
-                    <div className="body-content-2" 
-                        // data-aos="fade-up" 
-                        // data-aos-anchor-placement="center-bottom"  
-                        // data-aos-delay="2000"
-                        >
-                        <div className="list-product-car container"
-                        >
+                    <div className="body-content-2" >
+                        <div className="list-product-car container">
                             {render_list_car()} 
                         </div>
                         <div className="detail-product-car container"  >
-                         {renderProductHome()}   
-
+                            {renderProductHome()}   
                         </div>
                     </div>
                     <div className="body-content-3">
