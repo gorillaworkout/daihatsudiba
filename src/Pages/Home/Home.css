@@ -667,18 +667,7 @@ height:550px;
 }
 
 
-.bh-box-detail {
-    width:10%;
-    height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color:black;
-}
-.bh-box-detail:hover{
-    cursor: pointer;
-}
+
 
 .dd-product {
     padding:5px;

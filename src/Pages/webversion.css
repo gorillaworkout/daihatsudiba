@@ -74,14 +74,14 @@
     .btn-check-product{
         width:100px;
         height:40px;
-        font-size:10px;
+        font-size:8px;
         margin:5px;
     }
   
     .btn-buy-product{
         width:100px;
         height:40px;
-        font-size:10px;
+        font-size:8px;
         margin:5px;
     }
     .body-content-3 {
@@ -147,6 +147,8 @@
     }
     .detail-product-car{
         height:400px;
+        padding-right:0px !important;
+        padding-left:0px !important;
     }
     .icon-wa-2{
         top:0px;

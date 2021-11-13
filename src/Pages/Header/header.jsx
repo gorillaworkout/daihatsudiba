@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './header.css'
 // import bggw from '../../Assets/newbggw.png'
-// import $ from "jquery";
+import $ from "jquery";
 // import Swal from 'sweetalert2';
 // import DatePicker from "react-datepicker";
 // import moment from 'moment';
@@ -37,6 +37,7 @@ bg_granmax_mb,full_granmax_mb,gray_granmax_mb,interior_granmax_mb,
 bg_granmax_pu,gray_granmax_pu,full_granmax_pu,interior_granmax_pu,
 bg_sirion,full_sirion,interior_sirion,gray_sirion
 } from '../../Assets/assets' 
+import { Link2 } from 'react-feather';
 
 
 
@@ -133,7 +134,7 @@ export default function Header(){
             // console.log(stringify_dp)
             return (
                 <>
-                    <Link to={{pathname:`/specification/${stringify_dp}`}} className="dd-product-item">
+                    <Link to={{pathname:`/specification/${stringify_dp}`}} className="dd-product-item" onClick={close_modal}>
                         <img src={val.gambar_satuan} alt=""/>
                         <p>{val.nama_mobil}</p>
                         <p>RP.{val.harga}</p>
@@ -141,6 +142,14 @@ export default function Header(){
                 </>
             )
         })
+    }
+
+    const close_modal=()=>{
+        console.log($('.dopdown .dropdown-menu'))
+        $('.dropdown .dropdown-menu').removeClass('show')
+    }
+    const open_modal=()=>{
+        $('.dropdown .dropdown-menu').addClass('show')
     }
     
     return (
@@ -175,18 +184,14 @@ export default function Header(){
 
                             <Dropdown.Menu>
                                 <div className="dd-product">
-                                        {render_header()}
+                                    {render_header()}
                                 </div>
                             </Dropdown.Menu>
                         </Dropdown>                        
                         </div>
-                        <div className="bh-box-detail" 
-                        // data-aos="zoom-in"
-                        // data-aos-delay="100"
-                        // data-aos-duration="2000"
-                        >
+                        <Link to={`/event`} className="bh-box-detail">
                             EVENT
-                        </div>
+                        </Link>
                     </div>
                     <div className="bh-right-mobile">
                         
@@ -196,9 +201,9 @@ export default function Header(){
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu className="dropdown_menu_mobile">
-                                <Dropdown.Item href="#/action-1">HOME</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">PRODUCT</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">EVENT</Dropdown.Item>
+                                <Dropdown.Item href="/">HOME</Dropdown.Item>
+                                <Dropdown.Item onClick={open_modal}>PRODUCT</Dropdown.Item>
+                                <Dropdown.Item href="/event">EVENT</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </div>

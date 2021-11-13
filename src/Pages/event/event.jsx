@@ -58,13 +58,11 @@ export default function Event(){
                             <p>INI JUDUL COK HARUS PANJANG KALO BISA</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptatibus iure minus eveniet officia atque enim blanditiis, quae perferendis esse illum vel totam nihil repellat eligendi sunt, accusamus asperiores cupiditate!</p>
                         </Link>
-                        <Link className="body-content-6">
-                            COPYRIGHT 2021 <AiFillCopyrightCircle/>  DIBA
-                        </Link>
-
+                    </div>
+                    <div className="body-content-6">
+                        COPYRIGHT 2021 <AiFillCopyrightCircle/>  DIBA
                     </div>
                 </div>
-
             </div>
 
            

@@ -16,7 +16,10 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
     bg_terios,gray_terios,full_terios,interior_terios,
     bg_granmax_mb,full_granmax_mb,gray_granmax_mb,interior_granmax_mb,
     bg_granmax_pu,gray_granmax_pu,full_granmax_pu,interior_granmax_pu,
-    bg_sirion,full_sirion,interior_sirion,gray_sirion
+    bg_sirion,full_sirion,interior_sirion,gray_sirion,
+    pdf_granmax_pu,
+    pdf_rocky,
+    pdf_sigra,pdf_sirion,pdf_terios,pdf_xenia
     } from '../../Assets/assets' 
 
     var  detail_product = [
@@ -26,7 +29,8 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_rocky,
             gambar_satuan:merah_rocky,
             interior:interior_rocky,
-            full:kuning_rocky
+            full:kuning_rocky,
+            pdf:pdf_rocky
         },
         {
             nama_mobil : 'AYLA',
@@ -34,7 +38,8 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_ayla,
             gambar_satuan:merah_ayla,
             interior:interior_ayla,
-            full:full_ayla
+            full:full_ayla,
+            pdf:pdf_sigra
         },
         {
             nama_mobil : 'SIGRA',
@@ -42,7 +47,8 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_sigra,
             gambar_satuan:gray_sigra,
             interior:interior_sigra,
-            full:full_sigra
+            full:full_sigra,
+            pdf:pdf_sigra
         },
         {
             nama_mobil : 'GRAND NEW XENIA',
@@ -50,7 +56,8 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_xenia,
             gambar_satuan:gray_xenia,
             interior:interior_xenia,
-            full:full_xenia
+            full:full_xenia,
+            pdf:pdf_xenia
         },
         {
             nama_mobil : 'ALL NEW TERIOS',
@@ -58,7 +65,8 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_terios,
             gambar_satuan:gray_terios,
             interior:interior_terios,
-            full:full_terios
+            full:full_terios,
+            pdf:pdf_terios
         },
         {
             nama_mobil : 'ALL NEW SIRION',
@@ -66,7 +74,8 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_sirion,
             gambar_satuan:gray_sirion,
             interior:interior_sirion,
-            full:full_sirion
+            full:full_sirion,
+            pdf:pdf_sirion
         },
         {
             nama_mobil : 'LUXIO',
@@ -74,7 +83,8 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_luxio,
             gambar_satuan:polos_luxio,
             interior:interior_luxio,
-            full:full_luxio
+            full:full_luxio,
+            pdf:pdf_rocky
         },
         {
             nama_mobil : 'GRANDMAX MB',
@@ -82,7 +92,8 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_granmax_mb,
             gambar_satuan:gray_granmax_mb,
             interior:interior_granmax_mb,
-            full:full_granmax_mb
+            full:full_granmax_mb,
+            pdf:pdf_granmax_pu
         },
         {
             nama_mobil : 'GRANDMAX PU',
@@ -90,7 +101,8 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_granmax_pu,
             gambar_satuan:gray_granmax_pu,
             interior:interior_granmax_pu,
-            full:full_granmax_pu
+            full:full_granmax_pu,
+            pdf:pdf_granmax_pu
         }
     ]
 
@@ -121,12 +133,12 @@ export default function Specification(){
                         <p>Segera lakukan simulasi kredit atau download brosur untuk mengetahui info lebih lanjut</p>
                     </div>
                     <div className="spec-2-right">
-                        <div className="simulasi-kredit">
+                        <a href={`https://wa.me/+6285887854544/?text=Saya Ingin Konsultasi Mengenai Mobil`} target="_blank" className="simulasi-kredit">
                             Simulasi Kredit
-                        </div>
-                        <div className="download-brosur">
+                        </a>
+                        <a href={data_render.pdf} className="download-brosur" target="_blank">
                             Download Brosur
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div className="spec-3-detail-mobil">
@@ -139,12 +151,12 @@ export default function Specification(){
                         <p>Rp {data_render.harga}</p>
 
                         <div className="box-contact-spec">
-                            <div className="simulasi-kredit">
+                            <a href={`https://wa.me/+6285887854544/?text=Saya Ingin Konsultasi Mengenai Mobil`} target="_blank"  className="simulasi-kredit">
                                 Hubungi
-                            </div>
-                            <div className="simulasi-kredit">
+                            </a>
+                            <a className="simulasi-kredit" href={`https://wa.me/+6285887854544/?text=Saya Ingin Konsultasi Mengenai Mobil`} target="_blank">
                                 Simulasi Kredit
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
