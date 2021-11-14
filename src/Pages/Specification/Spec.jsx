@@ -7,6 +7,7 @@ import ayla_satuan from '../../Assets/mobil-satuan-ayla.png'
 // import interior_ayla from '../../Assets/interior-ayla.jpeg'
 // import full_ayla from '../../Assets/full_ayla.jpeg'
 import Accordion from 'react-bootstrap/Accordion'
+import Speedometer from '../../Assets/Spedometer.mp4'
 import { useParams } from "react-router-dom";
 import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
     bg_ayla,merah_ayla,full_ayla,interior_ayla,
@@ -178,12 +179,15 @@ export default function Specification(){
                         <img src={data_render.full} alt="" />    
                     </div>
                     <div className="spec-5-right">
-                        <div className="box_detail_gradient">
-                            <h1>INTERIOR</h1>
-                            <h1>{data_render.nama_mobil}</h1>
-                            
-                            <p>Astra Daihatsu {data_render.nama_mobil} hadir dengan interior yang elegant dan memiliki fitur-fitur canggih di dalamnya. Nikmati dan rasakan fiturnya.</p>
-                        </div>
+                        {/* <video  autoplay="autoplay" loop="loop" muted id="video_spec">
+                            <source src={Speedometer} type="video/mp4"/>
+                        </video> */}
+                            <div className="box_detail_gradient">
+                                <h1>INTERIOR</h1>
+                                <h1>{data_render.nama_mobil}</h1>
+                                
+                                <p>Astra Daihatsu {data_render.nama_mobil} hadir dengan interior yang elegant dan memiliki fitur-fitur canggih di dalamnya. Nikmati dan rasakan fiturnya.</p>
+                            </div>
                     </div>
                 </div>
                 <div className="spec-6-teknis">

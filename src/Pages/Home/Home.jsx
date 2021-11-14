@@ -12,6 +12,7 @@ import sigra from '../../Assets/daihatsu-sigra.jpg'
 import terios from '../../Assets/daihatsu-terios.jpeg'
 import rocky from '../../Assets/daihatsu-rocky.png'
 import diba_profile from '../../Assets/diba_profile.jpg'
+import Speedometer from '../../Assets/Spedometer.mp4'
 
 // import daihatsulogo from '../../Assets/daihatsu-logo.png'
 // import advertise1 from '../../Assets/advertise-1.jpeg'
@@ -275,7 +276,7 @@ export default function Home(){
                     width="550px"
                     height="350px"
                     id="myId"
-                    className="myClassname"
+                    className="myclassName"
                     display="initial"
                     position="relative"/>
             </div>

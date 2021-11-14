@@ -226,5 +226,64 @@
     .teknis-box {
         width:100% !important;
     }
-    
+    .box_event_1 {
+        min-width:100%;
+        margin:0px !important;
+        margin-bottom:10px !important;
+    }
+    .cont_box_event {
+        padding:10px !important;
+    }
+    .judul_isi_detail h1 {
+        text-align: center;
+        font-size:30px !important;
+    }
+    .isi_berita_event {
+        width:100% !important;
+    }
+
+    .topbox4 .content {
+        width: 90% !important;
+        height: 380px !important;
+    }
+
+    .topbox3 .kotak0 {
+        width:90% !important;
+        justify-content: space-between !important;
+    }
+
+    .kotak0 .kotak1 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak2 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak3 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak1 {
+        width: 100px !important;
+    }
+
+    .kotak0 .kotak2 {
+        width: 100px !important;
+    }
+
+    .kotak0 .kotak3 {
+        width: 100px !important;
+    }
+    .topbox4 .content {
+        padding-top: 20px !important;
+    }
+
+    .form .right input {
+        width: 100%;
+    }
+
+    .serve1 {
+        height: 70px !important;
+    }
 } 

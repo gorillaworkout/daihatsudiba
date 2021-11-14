@@ -1,80 +1,285 @@
-/* .container {
-    width: 100%;
-    height: 100vh;
-    
-    display: flex;
+.biggest_box_container{
+    width:100%;
+    height:100vh;
+    display:flex;
     flex-direction: column;
-} */
-
-.topbox {
-    width: 100%;
-    height: 20vh;
+}
+.container_contact {
+	width: 100%;
+    height:100vh;
+	background-color: #f8f8f8;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.topbox h1 {
-    font-size: 30px;
-    color: red;
-    font-weight: bold;
+    flex-direction: column;
 }
 
 .topbox1 {
-    width: 100%;
-    /* margin-top: -65px; */
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 100%;
+	height: 35px;
+	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
-.topbox1 h5 {
-    font-size: 16px;
-    color: white;
+.topbox1 h1 {
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+	font-family: arial;
+}
+
+.topbox2 {
+	width: 100%;
+	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.topbox2 p {
+	font-size: 14px;
+	color: black;
+	font-family: arial;
 }
 
 .topbox3 {
-    width: 100%;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
+	width: 100%;
+	background-color: #f8f8f8;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.topbox3 .kotak0 {
+	width: 47%;
+	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.kotak0 .kotak1 {
+	width: 130px;
+	height: 70px;
+	background-color: #f8f8f8;
+	border: 1px solid #274898;
+	border-radius: 10px;
+	display: flex;
+    padding:5px;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.4s;
+}
+
+.kotak0 a {
+	text-decoration: none;
+}
+
+.kotak1 img {
+	width: 30px;
+	height: 30px;
+}
+
+.kotak1 p {
+	font-size: 10px;
+	color: black;
+	font-family: arial;
+	text-align: center;
+	transition: 0.4s;
+    margin:0px !important;
+}
+
+a .kotak1:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.kotak0 .kotak2 {
+	width: 130px;
+	height: 70px;
+	background-color: #f8f8f8;
+	border: 1px solid #274898;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    padding:5px;
     align-items: center;
+	transition: 0.4s;
 }
 
-.topbox3 .kotak1 {
-    width: 30px;
-    height: 30px;
-    background-color: yellow;
+.kotak2 img {
+	width: 30px;
+	height: 30px;
 }
 
-.topbox3 .kotak2 {
-    width: 30px;
-    height: 30px;
-    background-color: yellow;
+.kotak2 p {
+	font-size: 10px;
+	color: black;
+	font-family: arial;
+	text-align: center;
+    margin:0px !important;
+	transition: 0.4s;
 }
 
-.topbox3 .kotak3 {
-    width: 30px;
-    height: 30px;
-    background-color: yellow;
+a .kotak2:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.kotak0 .kotak3 {
+	width: 130px;
+	height: 70px;
+	background-color: #f8f8f8;
+	border: 1px solid #274898;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    padding:5px;
+	align-items: center;
+	transition: 0.4s;
+}
+
+.kotak3 img {
+	width: 30px;
+	height: 25px;
+	padding-top: 2px;
+}
+
+.kotak3 p {
+	font-size: 11px;
+	color: black;
+	font-family: arial;
+	text-align: center;
+	padding-top: 2px;
+	transition: 0.4s;
+    margin:0px !important;
+}
+
+
+a .kotak3:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .topbox4 {
-    width: 100%;
-    background-color: blue;
+	width: 100%;
+	height: 420px;
+	background-color: #f8f8f8;
+	display: flex;
+	justify-content: center;
+}
+
+.topbox4 .content {
+	width: 40%;
+	height: 385px;
+	background-color: #274898;
+	padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+	border-radius: 20px;
 }
 
-.topbox4 p {
-    color: white;
-    padding: 70px;
+.content .contactform {
+	width: 100%;
+	height: 30px;
+	background-color: #274898;
 }
 
-.kotak1 {
-    width:50px;
-    height:50px;
-    border:1px solid black;
+.contactform p {
+	font-family: arial;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+}
+
+.form {
+	width: 100%;
+	height: 240px;
+	background-color: #274898;
+	display: flex;
+}
+
+.form .left {
+	width: 50%;
+	background-color: #274898;
+
+}
+
+.left p {
+	font-family: arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+}
+
+.left input {
+	width: 80%;
+	height: 35px;
+	border: 2px solid lightgrey;
+	border-radius: 5px;
+	margin-top: -10px;
+}
+
+.left .p2 {
+	padding-top: 10px;
+}
+
+.left .p3 {
+	padding-top: 10px;
+}
+
+.form .right {
+	width: 50%;
+	background-color: #274898;
+}
+
+.right .p4 {
+	font-family: arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+}
+
+.right input {
+	width: 100%;
+	height: 203px;
+	border: 2px solid lightgrey;
+	border-radius: 5px;
+	margin-top: -10px;
+}
+
+.serve1 {
+	width: 100%;
+	height: 90px;
+	background-color: #274898;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.serve1 button {
+	width: 150px;
+	height: 35px;
+	border-radius: 8px;
+	color: #274898;
+	font-weight: bold;
+	border: none;
+	transition: 0.4s;
+}
+
+.serve1 button:hover {
+	cursor: pointer;
+	background-color: lightgrey;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.icon_contact {
+    font-size:30px;
 }

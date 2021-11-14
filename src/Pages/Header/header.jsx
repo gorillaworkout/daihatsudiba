@@ -192,6 +192,9 @@ export default function Header(){
                         <Link to={`/event`} className="bh-box-detail">
                             EVENT
                         </Link>
+                        <Link to={`/contact`} className="bh-box-detail">
+                            CONTACT
+                        </Link>
                     </div>
                     <div className="bh-right-mobile">
                         
@@ -203,6 +206,7 @@ export default function Header(){
                             <Dropdown.Menu className="dropdown_menu_mobile">
                                 <Dropdown.Item href="/">HOME</Dropdown.Item>
                                 <Dropdown.Item onClick={open_modal}>PRODUCT</Dropdown.Item>
+                                <Dropdown.Item href="/contact">Contact</Dropdown.Item>
                                 <Dropdown.Item href="/event">EVENT</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>

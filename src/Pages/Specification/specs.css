@@ -94,6 +94,12 @@ background-color: blue;
     color:#274898;
     
 }
+#video_spec {
+    width:300px;
+    height:300px;
+    background-color: red;
+}
+
 
 .spec-3-detail-mobil{
     width:100%;
@@ -227,6 +233,11 @@ text-align: left;
     align-items: center;
     flex-direction: column;
     background: radial-gradient(rgb(22, 64, 136), rgb(3, 10, 22));
+    background: url('../../Assets/Spedometer.mp4') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .spec-5-left {
     width:60%;
