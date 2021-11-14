@@ -148,9 +148,7 @@ export default function Header(){
         console.log($('.dopdown .dropdown-menu'))
         $('.dropdown .dropdown-menu').removeClass('show')
     }
-    const open_modal=()=>{
-        $('.dropdown .dropdown-menu').addClass('show')
-    }
+
     
     return (
 
@@ -205,8 +203,7 @@ export default function Header(){
 
                             <Dropdown.Menu className="dropdown_menu_mobile">
                                 <Dropdown.Item href="/">HOME</Dropdown.Item>
-                                <Dropdown.Item onClick={open_modal}>PRODUCT</Dropdown.Item>
-                                <Dropdown.Item href="/contact">Contact</Dropdown.Item>
+                                <Dropdown.Item href="/contact">CONTACT</Dropdown.Item>
                                 <Dropdown.Item href="/event">EVENT</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>

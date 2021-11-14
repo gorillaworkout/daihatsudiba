@@ -399,7 +399,7 @@ export default function Home(){
                 <Header/>
                 <div className="new-body-content ">
                     <div className="body-content-1">
-                        <div className="carousel-container container">
+                        <div className="carousel-container">
                             {/* <div className="mySlides animate">
                               <img src={rocky} alt="slide" />
                             </div>       

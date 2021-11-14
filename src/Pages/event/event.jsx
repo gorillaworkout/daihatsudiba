@@ -39,9 +39,9 @@ export default function Event(){
                         </Link>
                         
                     </div>
-                    <div className="body-content-6">
-                        COPYRIGHT 2021 <AiFillCopyrightCircle/>  DIBA
-                    </div>
+                </div>
+                <div className="body-content-6">
+                    COPYRIGHT 2021 <AiFillCopyrightCircle/>  DIBA
                 </div>
             </div>
 

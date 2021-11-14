@@ -47,7 +47,10 @@
         padding-top:10px;
     } */
     .carousel-container{
-        width:350px;
+        /* width:350px; */
+        height:500px;
+    }
+    .mySlides {
         height:500px;
     }
     .mySlides img{
