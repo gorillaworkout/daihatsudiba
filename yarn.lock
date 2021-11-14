@@ -480,25 +480,25 @@
     "@babel/helper-remap-async-to-generator" "^7.15.4"
     "@babel/plugin-syntax-async-generators" "^7.8.4"
 
-"@babel/plugin-proposal-className-properties@7.12.1":
+"@babel/plugin-proposal-class-properties@7.12.1":
   version "7.12.1"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-className-properties/-/plugin-proposal-className-properties-7.12.1.tgz#a082ff541f2a29a4821065b8add9346c0c16e5de"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.12.1.tgz#a082ff541f2a29a4821065b8add9346c0c16e5de"
   integrity sha512-cKp3dlQsFsEs5CWKnN7BnSHOd0EOW8EKpEjkoz1pO2E5KzIDNV9Ros1b0CnmbVgAGXJubOYVBOGCT1OmJwOI7w==
   dependencies:
     "@babel/helper-create-className-features-plugin" "^7.12.1"
     "@babel/helper-plugin-utils" "^7.10.4"
 
-"@babel/plugin-proposal-className-properties@^7.12.1", "@babel/plugin-proposal-className-properties@^7.14.5":
+"@babel/plugin-proposal-class-properties@^7.12.1", "@babel/plugin-proposal-class-properties@^7.14.5":
   version "7.14.5"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-className-properties/-/plugin-proposal-className-properties-7.14.5.tgz#40d1ee140c5b1e31a350f4f5eed945096559b42e"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.14.5.tgz#40d1ee140c5b1e31a350f4f5eed945096559b42e"
   integrity sha512-q/PLpv5Ko4dVc1LYMpCY7RVAAO4uk55qPwrIuJ5QJ8c6cVuAmhu7I/49JOppXL6gXf7ZHzpRVEUZdYoPLM04Gg==
   dependencies:
     "@babel/helper-create-className-features-plugin" "^7.14.5"
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-proposal-className-static-block@^7.15.4":
+"@babel/plugin-proposal-class-static-block@^7.15.4":
   version "7.15.4"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-className-static-block/-/plugin-proposal-className-static-block-7.15.4.tgz#3e7ca6128453c089e8b477a99f970c63fc1cb8d7"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-static-block/-/plugin-proposal-class-static-block-7.15.4.tgz#3e7ca6128453c089e8b477a99f970c63fc1cb8d7"
   integrity sha512-M682XWrrLNk3chXCjoPUQWOyYsB93B9z3mRyjtqqYJWDf2mfCdIYgDrA11cgNVhAQieaq6F2fn2f3wI0U4aTjA==
   dependencies:
     "@babel/helper-create-className-features-plugin" "^7.15.4"
@@ -1158,7 +1158,7 @@
     "@babel/helper-plugin-utils" "^7.10.4"
     "@babel/helper-validator-option" "^7.12.1"
     "@babel/plugin-proposal-async-generator-functions" "^7.12.1"
-    "@babel/plugin-proposal-className-properties" "^7.12.1"
+    "@babel/plugin-proposal-class-properties" "^7.12.1"
     "@babel/plugin-proposal-dynamic-import" "^7.12.1"
     "@babel/plugin-proposal-export-namespace-from" "^7.12.1"
     "@babel/plugin-proposal-json-strings" "^7.12.1"
@@ -1230,8 +1230,8 @@
     "@babel/helper-validator-option" "^7.14.5"
     "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining" "^7.15.4"
     "@babel/plugin-proposal-async-generator-functions" "^7.15.4"
-    "@babel/plugin-proposal-className-properties" "^7.14.5"
-    "@babel/plugin-proposal-className-static-block" "^7.15.4"
+    "@babel/plugin-proposal-class-properties" "^7.14.5"
+    "@babel/plugin-proposal-class-static-block" "^7.15.4"
     "@babel/plugin-proposal-dynamic-import" "^7.14.5"
     "@babel/plugin-proposal-export-namespace-from" "^7.14.5"
     "@babel/plugin-proposal-json-strings" "^7.14.5"
@@ -3082,7 +3082,7 @@ babel-preset-react-app@^10.0.0:
   integrity sha512-itL2z8v16khpuKutx5IH8UdCdSTuzrOhRFTEdIhveZ2i1iBKDrVE0ATa4sFVy+02GLucZNVBWtoarXBy0Msdpg==
   dependencies:
     "@babel/core" "7.12.3"
-    "@babel/plugin-proposal-className-properties" "7.12.1"
+    "@babel/plugin-proposal-class-properties" "7.12.1"
     "@babel/plugin-proposal-decorators" "7.12.1"
     "@babel/plugin-proposal-nullish-coalescing-operator" "7.12.1"
     "@babel/plugin-proposal-numeric-separator" "7.12.1"
