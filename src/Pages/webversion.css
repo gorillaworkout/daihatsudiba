@@ -11,7 +11,7 @@
         width:100%;
     }
     .bh-right-mobile{
-        display: flex;
+        display: flex !important;
         justify-content: flex-end;
         align-items: center;
         width:30%;
@@ -588,3 +588,1254 @@
         height: 70px !important;
     }
 } 
+@media (max-width: 640px) {
+    .list-product-car {
+        min-width:100%;
+    }
+    .new-header-home{
+        justify-content: space-between;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .bh-left{
+        width:40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bh-left img{
+        width:70%;
+    }
+    .bh-right-mobile{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width:30%;
+        height:100%;
+        position: relative;
+        /* left:-30px; */
+    }
+    .dropdown_menu_product{
+        width:100vw !important;
+        height:500px !important;
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap ;
+    }
+    .dd-product-item{
+        width:33%;
+    }
+    .img_product_mobile {
+        width:30%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    #icon-menu-bar-home {
+        width:30px;
+        height:30px;
+    }
+    .bh-right{
+        display: none !important;
+    }
+    /* .new-body-content{
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:10px;
+    } */
+    .carousel-container{
+        /* width:350px; */
+        height:100vh;
+    }
+    .mySlides {
+        height:100vh;
+    }
+    .mySlides img{
+        width:350px;
+        height:250px;
+    }
+    .img-option-car {
+        width:80%;
+        height:65%;
+    }
+    .container_event {
+        height:100%;
+    }
+
+    .box-car{
+        min-width:40%;
+    }
+    .box-car p {
+        font-size:13px;
+    }
+    .detail-box-img-car{
+        height:80%;
+    }
+    .price-box p:nth-child(2){
+        font-size:13px;
+    }
+    .btn-check-product{
+        width:100px;
+        height:40px;
+        font-size:8px;
+        margin:5px;
+    }
+  
+    .btn-buy-product{
+        width:100px;
+        height:40px;
+        font-size:8px;
+        margin:5px;
+    }
+    .body-content-3 {
+        padding:0px !important;
+    }
+
+    .box_for_socmed-4{
+        width:100%;
+    }
+    .img-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bc-3-content-2 h1 {
+        font-size:25px;
+        width:100%;
+        text-align: center;
+    }
+    .icon-wa{
+        height:40px;
+        width:40px;
+        top:0px;
+    }
+
+    #soc_youtube{
+        display: none;
+    }
+    .bc-3-box {
+        width:20%;
+    }
+    .bc-profile-box {
+        width:60%;
+    }
+    #nama-diba{
+        width:100%;
+        text-align: center;
+    }
+    #siap-bantu{
+        width:100%;
+    }
+    .body-content-1 {
+        min-height:100vh;
+    }
+    .body-content-5{
+        min-height:800px;
+    }
+    .bc-5-alamat-2 {
+        flex-direction: column;
+    }
+    .bc-5-left p:nth-child(1){
+        font-size:16px;
+    }
+    .bc-5-left p:nth-child(2){
+        font-size:14px;
+        width:100%;
+    }
+    .bc-5-left{
+        width:100%;
+    }
+    .box_for_socmed-5 {
+        width:35%;
+    }
+    .detail-product-car{
+        height:400px;
+        padding-right:0px !important;
+        padding-left:0px !important;
+        min-width:100% !important;
+    }
+   
+    .icon-wa-2{
+        top:0px;
+    }
+    .spec-1-img {
+        height:400px !important;
+    }
+    .spec-2-brosur {
+        flex-direction: column;
+        height:300px !important;
+    }
+    .img_product_mobile {
+        display: flex !important;
+    }
+    .spec-2-left{
+        width:100% !important;
+    }
+    .spec-2-right {
+        width:100% !important;
+    }
+    .spec-2-left h1 {
+        font-size:26px;
+    }
+    .simulasi-kredit {
+        font-size:14px;
+    }
+    .download-brosur {
+        font-size:14px;
+    }
+    .spec-3-detail-mobil {
+        flex-direction: column !important;
+    }
+    .spec-3-left {
+        width:100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .spec-3-left img {
+        width:60% !important;
+    }
+    .spec-3-right {
+        width:100% !important;
+        
+    }
+    .spec-4-interior-mobil {
+        flex-direction: column !important;
+        height:500px !important;
+    }
+    .spec-4-left{
+        width:100% !important;
+    }
+    .spec-4-right{
+        width:100% !important;
+    }
+    .spec-5-interior-mobil {
+        flex-direction: column !important;
+        min-height:700px !important;
+    }
+    .spec-5-left {
+        width:100% !important;
+        min-height:50%;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    .spec-5-right{
+        width:100% !important;
+        height:50% !important;
+    }
+    .spec-5-left img{
+        width:70% !important;
+        height:70% !important;
+    }
+    .box_detail_gradient {
+        width:100% !important;
+        padding:20px;
+    }
+    .teknis-box {
+        width:100% !important;
+    }
+    .box_event_1 {
+        min-width:100%;
+        margin:0px !important;
+        margin-bottom:10px !important;
+    }
+    .cont_box_event {
+        padding:10px !important;
+    }
+    .judul_isi_detail h1 {
+        text-align: center;
+        font-size:30px !important;
+    }
+    .isi_berita_event {
+        width:100% !important;
+    }
+
+    .topbox4 .content {
+        width: 90% !important;
+        height: 380px !important;
+    }
+
+    .topbox3 .kotak0 {
+        width:90% !important;
+        justify-content: space-between !important;
+    }
+
+    .kotak0 .kotak1 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak2 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak3 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak1 {
+        width: 100px !important;
+    }
+
+    .kotak0 .kotak2 {
+        width: 100px !important;
+    }
+
+    .kotak0 .kotak3 {
+        width: 100px !important;
+    }
+    .topbox4 .content {
+        padding-top: 20px !important;
+    }
+
+    .form .right input {
+        width: 100%;
+    }
+
+    .serve1 {
+        height: 70px !important;
+    }
+} 
+@media (max-width: 767px) {
+    .bh-box-detail {
+        width:20% !important;
+    }
+    .list-product-car {
+        min-width:100%;
+    }
+    .new-header-home{
+        justify-content: space-between;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .bh-left{
+        width:40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bh-left img{
+        width:70%;
+    }
+    .bh-right-mobile{
+        display: flex !important;;
+        justify-content: flex-end;
+        align-items: center;
+        width:30%;
+        height:100%;
+        position: relative;
+        /* left:-30px; */
+    }
+    .dropdown_menu_product{
+        width:100vw !important;
+        height:500px !important;
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap ;
+    }
+    .dd-product-item{
+        width:33%;
+    }
+    .img_product_mobile {
+        width:30%;
+        display: none;
+        justify-content: flex-start;
+    }
+    #icon-menu-bar-home {
+        width:30px;
+        height:30px;
+    }
+    .bh-right{
+        display: none !important;;
+    }
+    /* .new-body-content{
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:10px;
+    } */
+    .carousel-container{
+        /* width:350px; */
+        height:100vh;
+    }
+    .mySlides {
+        height:100vh;
+    }
+    .mySlides img{
+        width:350px;
+        height:250px;
+    }
+    .img-option-car {
+        width:80%;
+        height:65%;
+    }
+    .container_event {
+        height:100%;
+    }
+
+    .box-car{
+        min-width:30%;
+    }
+    .box-car p {
+        font-size:13px;
+    }
+    .detail-box-img-car{
+        height:80%;
+    }
+    .price-box p:nth-child(2){
+        font-size:13px;
+    }
+    .btn-check-product{
+        width:100px;
+        height:40px;
+        font-size:8px;
+        margin:5px;
+    }
+  
+    .btn-buy-product{
+        width:100px;
+        height:40px;
+        font-size:8px;
+        margin:5px;
+    }
+    .body-content-3 {
+        padding:0px !important;
+    }
+
+    .box_for_socmed-4{
+        width:100%;
+    }
+    .img-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bc-3-content-2 h1 {
+        font-size:25px;
+        width:100%;
+        text-align: center;
+    }
+    .icon-wa{
+        height:40px;
+        width:40px;
+        top:0px;
+    }
+
+    #soc_youtube{
+        display: none;
+    }
+    .bc-3-box {
+        width:20%;
+    }
+    .bc-profile-box {
+        width:60%;
+    }
+    #nama-diba{
+        width:100%;
+        text-align: center;
+    }
+    #siap-bantu{
+        width:100%;
+    }
+    .body-content-1 {
+        min-height:100vh;
+    }
+    .body-content-5{
+        min-height:800px;
+    }
+    .bc-5-alamat-2 {
+        flex-direction: column;
+    }
+    .bc-5-left p:nth-child(1){
+        font-size:16px;
+    }
+    .bc-5-left p:nth-child(2){
+        font-size:14px;
+        width:100%;
+    }
+    .bc-5-left{
+        width:100%;
+    }
+    .box_for_socmed-5 {
+        width:35%;
+    }
+    .detail-product-car{
+        height:400px;
+        padding-right:0px !important;
+        padding-left:0px !important;
+        min-width:100% !important;
+    }
+   
+    .icon-wa-2{
+        top:0px;
+    }
+    .spec-1-img {
+        height:400px !important;
+    }
+    .spec-2-brosur {
+        flex-direction: column;
+        height:300px !important;
+    }
+    .img_product_mobile {
+        display: flex !important;
+    }
+    .spec-2-left{
+        width:100% !important;
+    }
+    .spec-2-right {
+        width:100% !important;
+    }
+    .spec-2-left h1 {
+        font-size:26px;
+    }
+    .simulasi-kredit {
+        font-size:14px;
+    }
+    .download-brosur {
+        font-size:14px;
+    }
+    .spec-3-detail-mobil {
+        flex-direction: column !important;
+    }
+    .spec-3-left {
+        width:100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .spec-3-left img {
+        width:60% !important;
+    }
+    .spec-3-right {
+        width:100% !important;
+        
+    }
+    .spec-4-interior-mobil {
+        flex-direction: column !important;
+        height:700px !important;
+    }
+    .spec-4-left{
+        width:100% !important;
+    }
+    .spec-4-right{
+        width:100% !important;
+    }
+    .spec-5-interior-mobil {
+        flex-direction: column !important;
+        min-height:700px !important;
+    }
+    .spec-5-left {
+        width:100% !important;
+        min-height:50%;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    .spec-5-right{
+        width:100% !important;
+        height:50% !important;
+    }
+    .spec-5-left img{
+        width:70% !important;
+        height:70% !important;
+    }
+    .box_detail_gradient {
+        width:100% !important;
+        padding:20px;
+    }
+    .teknis-box {
+        width:100% !important;
+    }
+    .box_event_1 {
+        min-width:48%;
+        margin:0px !important;
+        margin-bottom:10px !important;
+        margin-right:10px !important;
+    }
+    .cont_box_event {
+        padding:10px !important;
+        overflow: auto;
+        overflow-x: scroll;
+        min-width:100% !important;
+    }
+    .judul_isi_detail h1 {
+        text-align: center;
+        font-size:30px !important;
+    }
+    .isi_berita_event {
+        width:100% !important;
+    }
+
+    .topbox4 .content {
+        width: 90% !important;
+        height: 380px !important;
+    }
+
+    .topbox3 .kotak0 {
+        width:90% !important;
+        justify-content: space-between !important;
+    }
+
+    .kotak0 .kotak1 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak2 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak3 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak1 {
+        width: 100px !important;
+    }
+
+    .kotak0 .kotak2 {
+        width: 100px !important;
+    }
+
+    .kotak0 .kotak3 {
+        width: 100px !important;
+    }
+    .topbox4 .content {
+        padding-top: 20px !important;
+    }
+
+    .form .right input {
+        width: 100%;
+    }
+
+    .serve1 {
+        height: 70px !important;
+    }
+} 
+@media (max-width: 875px) {
+    .bh-box-detail {
+        width:20% !important;
+    }
+    .list-product-car {
+        min-width:100%;
+    }
+    .new-header-home{
+        justify-content: space-between;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .bh-left{
+        width:40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bh-left img{
+        width:70%;
+    }
+    .bh-right-mobile{
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+        width:30%;
+        height:100%;
+        position: relative;
+        /* left:-30px; */
+    }
+    .dropdown_menu_product{
+        width:100vw !important;
+        height:500px !important;
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap ;
+    }
+    .dd-product-item{
+        width:33%;
+    }
+    .img_product_mobile {
+        width:30%;
+        display: none ;
+        justify-content: flex-start;
+    }
+    #icon-menu-bar-home {
+        width:30px;
+        height:30px;
+    }
+    .bh-right{
+        display: flex;
+    }
+    /* .new-body-content{
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:10px;
+    } */
+    .carousel-container{
+        /* width:350px; */
+        height:100vh;
+    }
+    .mySlides {
+        height:100vh;
+    }
+    .mySlides img{
+        width:350px;
+        height:250px;
+    }
+    .img-option-car {
+        width:80%;
+        height:65%;
+    }
+    .container_event {
+        height:100%;
+    }
+
+    .box-car{
+        min-width:30%;
+    }
+    .box-car p {
+        font-size:13px;
+    }
+    .detail-box-img-car{
+        height:80%;
+    }
+    .price-box p:nth-child(2){
+        font-size:13px;
+    }
+    .btn-check-product{
+        width:100px;
+        height:40px;
+        font-size:8px;
+        margin:5px;
+    }
+  
+    .btn-buy-product{
+        width:100px;
+        height:40px;
+        font-size:8px;
+        margin:5px;
+    }
+    .body-content-3 {
+        padding:0px !important;
+    }
+
+    .box_for_socmed-4{
+        width:100%;
+    }
+    .img-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bc-3-content-2 h1 {
+        font-size:25px;
+        width:100%;
+        text-align: center;
+    }
+    .icon-wa{
+        height:40px;
+        width:40px;
+        top:0px;
+    }
+
+    #soc_youtube{
+        display: none;
+    }
+    .bc-3-box {
+        width:20%;
+    }
+    .bc-profile-box {
+        width:60%;
+    }
+    #nama-diba{
+        width:100%;
+        text-align: center;
+    }
+    #siap-bantu{
+        width:100%;
+    }
+    .body-content-1 {
+        min-height:100vh;
+    }
+    .body-content-5{
+        min-height:800px;
+    }
+    .bc-5-alamat-2 {
+        flex-direction: column;
+    }
+    .bc-5-left p:nth-child(1){
+        font-size:16px;
+    }
+    .bc-5-left p:nth-child(2){
+        font-size:14px;
+        width:100%;
+    }
+    .bc-5-left{
+        width:100%;
+    }
+    .box_for_socmed-5 {
+        width:35%;
+    }
+    .detail-product-car{
+        height:400px;
+        padding-right:0px !important;
+        padding-left:0px !important;
+        min-width:100% !important;
+    }
+   
+    .icon-wa-2{
+        top:0px;
+    }
+    .spec-1-img {
+        height:400px !important;
+    }
+    .spec-2-brosur {
+        flex-direction: column;
+        height:300px !important;
+    }
+   
+    .spec-2-left{
+        width:100% !important;
+    }
+    .spec-2-right {
+        width:100% !important;
+    }
+    .spec-2-left h1 {
+        font-size:26px;
+    }
+    .simulasi-kredit {
+        font-size:14px;
+    }
+    .download-brosur {
+        font-size:14px;
+    }
+    .spec-3-detail-mobil {
+        flex-direction: column !important;
+    }
+    .spec-3-left {
+        width:100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .spec-3-left img {
+        width:60% !important;
+    }
+    .spec-3-right {
+        width:100% !important;
+        
+    }
+    .spec-4-interior-mobil {
+        flex-direction: column !important;
+        height:700px !important;
+    }
+    .spec-4-left{
+        width:100% !important;
+    }
+    .spec-4-right{
+        width:100% !important;
+    }
+    .spec-5-interior-mobil {
+        flex-direction: column !important;
+        min-height:700px !important;
+    }
+    .spec-5-left {
+        width:100% !important;
+        min-height:50%;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    .spec-5-right{
+        width:100% !important;
+        height:50% !important;
+    }
+    .spec-5-left img{
+        width:70% !important;
+        height:70% !important;
+    }
+    .box_detail_gradient {
+        width:100% !important;
+        padding:20px;
+    }
+    .teknis-box {
+        width:100% !important;
+    }
+    .box_event_1 {
+        min-width:48%;
+        margin:0px !important;
+        margin-bottom:10px !important;
+        margin-right:10px !important;
+    }
+    .cont_box_event {
+        padding:10px !important;
+        overflow: auto;
+        overflow-x: scroll;
+        min-width:100% !important;
+    }
+    .judul_isi_detail h1 {
+        text-align: center;
+        font-size:30px !important;
+    }
+    .isi_berita_event {
+        width:100% !important;
+    }
+
+    .topbox4 .content {
+        width: 90% !important;
+        height: 380px !important;
+    }
+
+    .topbox3 .kotak0 {
+        width:90% !important;
+        justify-content: space-between !important;
+    }
+
+    .kotak0 .kotak1 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak2 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak3 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak1 {
+        width: 100px !important;
+    }
+
+    .kotak0 .kotak2 {
+        width: 100px !important;
+    }
+
+    .kotak0 .kotak3 {
+        width: 100px !important;
+    }
+    .topbox4 .content {
+        padding-top: 20px !important;
+    }
+
+    .form .right input {
+        width: 100%;
+    }
+
+    .serve1 {
+        height: 70px !important;
+    }
+} 
+@media (max-width: 1150px) {
+    .bh-box-detail {
+        width:20% !important;
+    }
+    .list-product-car {
+        min-width:100%;
+    }
+    .new-header-home{
+        justify-content: space-between;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .bh-left{
+        width:40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bh-left img{
+        width:70%;
+    }
+    .bh-right-mobile{
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+        width:30%;
+        height:100%;
+        position: relative;
+        /* left:-30px; */
+    }
+    .dropdown_menu_product{
+        width:100vw !important;
+        height:500px !important;
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap ;
+    }
+    .dd-product-item{
+        width:33%;
+    }
+    .img_product_mobile {
+        width:30%;
+        display: none ;
+        justify-content: flex-start;
+    }
+    #icon-menu-bar-home {
+        width:30px;
+        height:30px;
+    }
+    .bh-right{
+        display: flex;
+    }
+    /* .new-body-content{
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:10px;
+    } */
+    .carousel-container{
+        /* width:350px; */
+        height:100vh;
+    }
+    .mySlides {
+        height:100vh;
+    }
+    .mySlides img{
+        width:350px;
+        height:250px;
+    }
+    .img-option-car {
+        width:80%;
+        height:65%;
+    }
+    .container_event {
+        height:100%;
+    }
+
+    .box-car{
+        min-width:30%;
+    }
+    .box-car p {
+        font-size:13px;
+    }
+    .detail-box-img-car{
+        height:80%;
+    }
+    .price-box p:nth-child(2){
+        font-size:13px;
+    }
+    .btn-check-product{
+        width:100px;
+        height:40px;
+        font-size:8px;
+        margin:5px;
+    }
+  
+    .btn-buy-product{
+        width:100px;
+        height:40px;
+        font-size:8px;
+        margin:5px;
+    }
+    .body-content-3 {
+        padding:0px !important;
+    }
+
+    .box_for_socmed-4{
+        width:100%;
+    }
+    .img-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bc-3-content-2 h1 {
+        font-size:25px;
+        width:100%;
+        text-align: center;
+    }
+    .icon-wa{
+        height:40px;
+        width:40px;
+        top:0px;
+    }
+
+    #soc_youtube{
+        display: none;
+    }
+    .bc-3-box {
+        width:20%;
+    }
+    .bc-profile-box {
+        width:60%;
+    }
+    #nama-diba{
+        width:100%;
+        text-align: center;
+    }
+    #siap-bantu{
+        width:100%;
+    }
+    .body-content-1 {
+        min-height:100vh;
+    }
+    .body-content-5{
+        min-height:800px;
+    }
+    .bc-5-alamat-2 {
+        flex-direction: column;
+    }
+    .bc-5-left p:nth-child(1){
+        font-size:16px;
+    }
+    .bc-5-left p:nth-child(2){
+        font-size:14px;
+        width:100%;
+    }
+    .bc-5-left{
+        width:100%;
+    }
+    .box_for_socmed-5 {
+        width:35%;
+    }
+    .detail-product-car{
+        height:400px;
+        padding-right:0px !important;
+        padding-left:0px !important;
+        min-width:100% !important;
+    }
+   
+    .icon-wa-2{
+        top:0px;
+    }
+    .spec-1-img {
+        height:400px !important;
+    }
+    .spec-2-brosur {
+        flex-direction: column;
+        height:300px !important;
+    }
+   
+    .spec-2-left{
+        width:100% !important;
+    }
+    .spec-2-right {
+        width:100% !important;
+    }
+    .spec-2-left h1 {
+        font-size:26px;
+    }
+    .simulasi-kredit {
+        font-size:14px;
+    }
+    .download-brosur {
+        font-size:14px;
+    }
+    .spec-3-detail-mobil {
+        flex-direction: column !important;
+    }
+    .spec-3-left {
+        width:100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .spec-3-left img {
+        width:60% !important;
+    }
+    .spec-3-right {
+        width:100% !important;
+        
+    }
+    .spec-4-interior-mobil {
+        flex-direction: column !important;
+        height:700px !important;
+    }
+    .spec-4-left{
+        width:100% !important;
+    }
+    .spec-4-right{
+        width:100% !important;
+    }
+    .spec-5-interior-mobil {
+        flex-direction: column !important;
+        min-height:700px !important;
+    }
+    .spec-5-left {
+        width:100% !important;
+        min-height:50%;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    .spec-5-right{
+        width:100% !important;
+        height:50% !important;
+    }
+    .spec-5-left img{
+        width:70% !important;
+        height:70% !important;
+    }
+    .box_detail_gradient {
+        width:100% !important;
+        padding:20px;
+    }
+    .teknis-box {
+        width:100% !important;
+    }
+    .box_event_1 {
+        min-width:48%;
+        margin:0px !important;
+        margin-bottom:10px !important;
+        margin-right:10px !important;
+    }
+    .cont_box_event {
+        padding:10px !important;
+        overflow: auto;
+        overflow-x: scroll;
+        min-width:100% !important;
+    }
+    .judul_isi_detail h1 {
+        text-align: center;
+        font-size:30px !important;
+    }
+    .isi_berita_event {
+        width:100% !important;
+    }
+
+    .topbox4 .content {
+        width: 90% !important;
+        height: 380px !important;
+    }
+
+    .topbox3 .kotak0 {
+        width:90% !important;
+        justify-content: space-between !important;
+    }
+
+    .kotak0 .kotak1 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak2 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak3 p {
+        font-size: 8px;
+    }
+
+    .kotak0 .kotak1 {
+        width: 100px !important;
+    }
+
+    .kotak0 .kotak2 {
+        width: 100px !important;
+    }
+
+    .kotak0 .kotak3 {
+        width: 100px !important;
+    }
+    .topbox4 .content {
+        padding-top: 20px !important;
+    }
+
+    .form .right input {
+        width: 100%;
+    }
+
+    .serve1 {
+        height: 70px !important;
+    }
+} 
+
+
