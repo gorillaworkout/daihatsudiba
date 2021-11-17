@@ -187,8 +187,8 @@ export default function Header(){
                             </Dropdown.Menu>
                         </Dropdown>                        
                         </div>
-                        <Link to={`/event`} className="bh-box-detail">
-                            EVENT
+                        <Link to={`/promo`} className="bh-box-detail">
+                            PROMO
                         </Link>
                         <Link to={`/contact`} className="bh-box-detail">
                             CONTACT

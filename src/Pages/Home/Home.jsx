@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import './Home.css'
 import '../webversion.css'
 // import bggw from '../../Assets/newbggw.png'
 import $ from "jquery";
-// import Swal from 'sweetalert2';
-// import DatePicker from "react-datepicker";
-// import moment from 'moment';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Dropdown from 'react-bootstrap/Dropdown'
 import sigra from '../../Assets/daihatsu-sigra.jpg'
@@ -40,7 +37,20 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
     bg_sirion,full_sirion,interior_sirion,gray_sirion,
     pdf_granmax_pu,
     pdf_rocky,
-    pdf_sigra,pdf_sirion,pdf_terios,pdf_xenia
+    pdf_sigra,pdf_sirion,pdf_terios,pdf_xenia,
+    testi_anto,testi_erni,testi_rizal,
+    testi_evan,testi_jonathan,testi_pt_binaangkasa,
+    testi_rahmat,testi_siti_alminah,testi_yanti,
+    pdf_luxio,
+    pdf_ayla,pdf_granmax_mb,
+    brosur_xenia,brosur_rocky,
+    dimensi_ayla,ban_ayla,kapasitas_duduk_ayla,mesin_ayla,radius_putar_ayla,rem_ayla,suspensi_ayla,transmisi_ayla,sistem_kemudi_ayla,
+    dimensi_sigra,ban_sigra,kapasitas_duduk_sigra,mesin_sigra,radius_putar_sigra,rem_sigra,suspensi_sigra,transmisi_sigra,sistem_kemudi_sigra,
+    dimensi_sirion,ban_sirion,kapasitas_duduk_sirion,mesin_sirion,radius_putar_sirion,rem_sirion,suspensi_sirion,transmisi_sirion,sistem_kemudi_sirion,
+    dimensi_luxio,ban_luxio,kapasitas_duduk_luxio,mesin_luxio,radius_putar_luxio,rem_luxio,suspensi_luxio,transmisi_luxio,sistem_kemudi_luxio,
+    dimensi_terios,ban_terios,kapasitas_duduk_terios,mesin_terios,radius_putar_terios,rem_terios,suspensi_terios,transmisi_terios,sistem_kemudi_terios,
+    dimensi_granmax_mb,ban_granmax_mb,kapasitas_duduk_granmax_mb,mesin_granmax_mb,radius_putar_granmax_mb,rem_granmax_mb,suspensi_granmax_mb,transmisi_granmax_mb,sistem_kemudi_granmax_mb,
+    dimensi_granmax_pu,ban_granmax_pu,kapasitas_duduk_granmax_pu,mesin_granmax_pu,radius_putar_granmax_pu,rem_granmax_pu,suspensi_granmax_pu,transmisi_granmax_pu,sistem_kemudi_granmax_pu
     } from '../../Assets/assets' 
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -57,6 +67,66 @@ export default function Home(){
     AOS.init();
    
     const [idProduct,setIdProduct] = useState(1) 
+    const [allTestimoni,setAllTestimoni] = useState(
+        {
+            "testimoni":[
+                {
+                    "gambar":testi_anto,
+                    "nama_customer":'Anto',
+                    "pekerjaan":"Karyawan Swasta",
+                    "comment":"Sales-nya mas Diba baik banget, responsif dan cepat unitnya saya langsung di delivery Pokoknya the best banget"
+                },
+                {
+                    "gambar":testi_erni,
+                    "nama_customer":'Erni',
+                    "pekerjaan":"Karyawan Swasta",
+                    "comment":"Pelayanan ramah service tepat sesuai rencana bahkan dapat discount dan bonus banyak, bisa di jadikan recommend mas Diba nya"
+                },
+                {
+                    "gambar":testi_evan,
+                    "nama_customer":'Evan',
+                    "pekerjaan":"Karyawan Swasta",
+                    "comment":"kntl yang indah"
+                },
+                {
+                    "gambar":testi_jonathan,
+                    "nama_customer":'Jonathan',
+                    "pekerjaan":"Karyawan Swasta",
+                    "comment":"kntl yang indah"
+                },
+                {
+                    "gambar":testi_pt_binaangkasa,
+                    "nama_customer":'PT Bina Angkasa',
+                    "pekerjaan":"Karyawan Swasta",
+                    "comment":"kntl yang indah"
+                },
+                {
+                    "gambar":testi_rahmat,
+                    "nama_customer":'rahmat',
+                    "pekerjaan":"Karyawan Swasta",
+                    "comment":"kntl yang indah"
+                },
+                {
+                    "gambar":testi_rizal,
+                    "nama_customer":'Rizal',
+                    "pekerjaan":"Karyawan Swasta",
+                    "comment":"kntl yang indah"
+                },
+                {
+                    "gambar":testi_siti_alminah,
+                    "nama_customer":'Siti Alminah',
+                    "pekerjaan":"Karyawan Swasta",
+                    "comment":"kntl yang indah"
+                },
+                {
+                    "gambar":testi_yanti,
+                    "nama_customer":'Yanti',
+                    "pekerjaan":"Karyawan Swasta",
+                    "comment":"kntl yang indah"
+                },
+            ]
+        }
+    )
     const [gambar_mobil,setGambar_Mobil]=useState(
         {
             "list_gambar":[
@@ -110,7 +180,17 @@ export default function Home(){
                 "gambar_satuan":merah_rocky,
                 "interior":interior_rocky,
                 "full":kuning_rocky,
-                "pdf":pdf_rocky
+                "pdf":pdf_rocky,
+                "brosur":brosur_rocky,
+                "dimensi":undefined,
+                "ban":undefined,
+                "kapasitas_duduk":undefined,
+                "radius_putar":undefined,
+                "mesin":undefined,
+                "rem":undefined,
+                "suspensi":undefined,
+                "ban":undefined,
+                "sistem_kemudi":undefined
                 
               },
               {
@@ -121,7 +201,16 @@ export default function Home(){
                 "gambar_satuan":merah_ayla,
                 "interior":interior_ayla,
                 "full":full_ayla,
-                "pdf":pdf_rocky                
+                "pdf":pdf_ayla,
+                "dimensi":dimensi_ayla,
+                "ban":ban_ayla,
+                "kapasitas_duduk":kapasitas_duduk_ayla,
+                "radius_putar":radius_putar_ayla,
+                "mesin":mesin_ayla,
+                "rem":rem_ayla,
+                "suspensi":suspensi_ayla,
+                "ban":ban_ayla,
+                "sistem_kemudi":sistem_kemudi_ayla                
               },
               {
                 "car_id": 3,
@@ -131,7 +220,16 @@ export default function Home(){
                 "gambar_satuan":gray_sigra,
                 "interior":interior_sigra,
                 "full":full_sigra,
-                "pdf":pdf_sigra
+                "pdf":pdf_sigra,
+                "dimensi":dimensi_sigra,
+                "ban":ban_sigra,
+                "kapasitas_duduk":kapasitas_duduk_sigra,
+                "radius_putar":radius_putar_sigra,
+                "mesin":mesin_sigra,
+                "rem":rem_sigra,
+                "suspensi":suspensi_sigra,
+                "ban":ban_sigra,
+                "sistem_kemudi":sistem_kemudi_sigra    
               },
               {
                 "car_id": 4,
@@ -141,7 +239,17 @@ export default function Home(){
                 "gambar_satuan":gray_xenia,
                 "interior":interior_xenia,
                 "full":full_xenia,
-                "pdf":pdf_xenia
+                "pdf":pdf_xenia,
+                "brosur":brosur_xenia,
+                "dimensi":undefined,
+                "ban":undefined,
+                "kapasitas_duduk":undefined,
+                "radius_putar":undefined,
+                "mesin":undefined,
+                "rem":undefined,
+                "suspensi":undefined,
+                "ban":undefined,
+                "sistem_kemudi":undefined
               },
               {
                 "car_id": 5,
@@ -151,7 +259,16 @@ export default function Home(){
                 "gambar_satuan":gray_terios,
                 "interior":interior_terios,
                 "full":full_terios,
-                "pdf":pdf_terios
+                "pdf":pdf_terios,
+                "dimensi":dimensi_terios,
+                "ban":ban_terios,
+                "kapasitas_duduk":kapasitas_duduk_terios,
+                "radius_putar":radius_putar_terios,
+                "mesin":mesin_terios,
+                "rem":rem_terios,
+                "suspensi":suspensi_terios,
+                "ban":ban_terios,
+                "sistem_kemudi":sistem_kemudi_terios 
               },
               {
                 "car_id": 6,
@@ -161,7 +278,16 @@ export default function Home(){
                 "gambar_satuan":gray_sirion,
                 "interior":interior_sirion,
                 "full":full_sirion,
-                "pdf":pdf_sirion
+                "pdf":pdf_sirion,
+                "dimensi":dimensi_sirion,
+                "ban":ban_sirion,
+                "kapasitas_duduk":kapasitas_duduk_sirion,
+                "radius_putar":radius_putar_sirion,
+                "mesin":mesin_sirion,
+                "rem":rem_sirion,
+                "suspensi":suspensi_sirion,
+                "ban":ban_sirion,
+                "sistem_kemudi":sistem_kemudi_sirion 
               },
               {
                 "car_id": 7,
@@ -171,7 +297,16 @@ export default function Home(){
                 "gambar_satuan":polos_luxio,
                 "interior":interior_luxio,
                 "full":full_luxio,
-                "pdf":pdf_xenia
+                "pdf":pdf_luxio,
+                "dimensi":dimensi_luxio,
+                "ban":ban_luxio,
+                "kapasitas_duduk":kapasitas_duduk_luxio,
+                "radius_putar":radius_putar_luxio,
+                "mesin":mesin_luxio,
+                "rem":rem_luxio,
+                "suspensi":suspensi_luxio,
+                "ban":ban_luxio,
+                "sistem_kemudi":sistem_kemudi_luxio 
               },
               {
                 "car_id": 8,
@@ -181,7 +316,7 @@ export default function Home(){
                 "gambar_satuan":gray_granmax_mb,
                 "interior":interior_granmax_mb,
                 "full":full_granmax_mb,
-                "pdf":pdf_rocky
+                "pdf":pdf_granmax_mb
               },
               {
                 "car_id": 9,
@@ -197,6 +332,7 @@ export default function Home(){
           }
     )
    
+
 
     
     //  FUNCTION FOR NEXT BEFORE IMAGE
@@ -260,6 +396,11 @@ export default function Home(){
     }, 3000); // 1sec
     
     // FUNCTION FOR NEXT BEFORE IMAGE
+
+
+    const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop,'slow')   
+    const myRef = useRef(null)
+    // const executeScroll = () => scrollToRef(myRef)
     useEffect(()=>{
         console.log(list_mobil)
         
@@ -290,6 +431,7 @@ export default function Home(){
     const onClickProductHome=(id)=>{
         // console.log(id,' ini index')
         setIdProduct(id)
+        scrollToRef(myRef)
     }
 
 
@@ -307,7 +449,7 @@ export default function Home(){
                 return (
                     <>
                     {/* <h1>testing true</h1> */}
-                    <div className="detail-box-img-car" key={1}>
+                    <div className="detail-box-img-car"  key={1}>
                             <img src={val.background} alt="" />
                         </div>
                         <div className="detail-box-price-car">
@@ -360,14 +502,14 @@ export default function Home(){
 
             if(index === 0){
                 return (
-                    <div className="box-car active-list-product" onClick={()=>onClickProductHome(index+1)}>
+                    <div className="box-car active-list-product" ref={myRef}  onClick={()=>onClickProductHome(index+1)}>
                         <img src={val.gambar_satuan} alt="" className="img-option-car"/>
                         <p>{val.nama_mobil}</p>
                     </div>
                 )
             }else {
                 return (
-                    <div className="box-car" onClick={()=>onClickProductHome(index+1)}>
+                    <div className="box-car" ref={myRef}  onClick={()=>onClickProductHome(index+1)}>
                         <img src={val.gambar_satuan} alt="" className="img-option-car"/>
                         <p>{val.nama_mobil}</p>
                    </div>
@@ -386,6 +528,28 @@ export default function Home(){
                 <div className="mySlides animate">
                     <img src={val.gambar} alt="slide" />
                 </div> 
+                </>
+            )
+        })
+    }
+
+
+    const render_testimoni=()=>{
+        return allTestimoni.testimoni.map((val,index)=>{
+            return (
+                <>
+                    <div className="box-testi-card">
+                        <div className="btc-img">
+                            <img src={val.gambar} alt=""/>
+                        </div>
+                        <div className="btc-nama">
+                            {val.nama_customer}
+                        </div>
+                        <div className="btc-comment">
+                            <p>{val.pekerjaan}</p>
+                            <p>{val.comment}</p>
+                        </div>
+                    </div>
                 </>
             )
         })
@@ -497,7 +661,7 @@ export default function Home(){
                         <div className="bc-4-content">
                             <div className="bc-4-content-2 ">
                                 <h1 id="nama-diba">
-                                    DIBA DIBA FARADIBA
+                                    DIBA FAHRIKA
                                 </h1>
                                 <h3 id="siap-bantu">
                                 Saya siap membantu Anda menemukan jenis kendaraan yang cocok sesuai dengan budget dan keinginan
@@ -517,54 +681,7 @@ export default function Home(){
                                         <p>Harga Murah, Bisa nego, top banget deh ajg</p>
                                     </div>
                                 </div>
-                                <div className="box-testi-card">
-                                    <div className="btc-img">
-                                        <img src={dibaProfile} alt=""/>
-                                    </div>
-                                    <div className="btc-nama">
-                                        BAYU DARMAMAWAN
-                                    </div>
-                                    <div className="btc-comment">
-                                        <p>Karyawan Swasta Dari Jakarta Barat</p>
-                                        <p>Harga Murah, Bisa nego, top banget deh ajg</p>
-                                    </div>
-                                </div>
-                                <div className="box-testi-card">
-                                    <div className="btc-img">
-                                        <img src={dibaProfile} alt=""/>
-                                    </div>
-                                    <div className="btc-nama">
-                                        BAYU DARMAMAWAN
-                                    </div>
-                                    <div className="btc-comment">
-                                        <p>Karyawan Swasta Dari Jakarta Barat</p>
-                                        <p>Harga Murah, Bisa nego, top banget deh ajg</p>
-                                    </div>
-                                </div>
-                                <div className="box-testi-card">
-                                    <div className="btc-img">
-                                        <img src={dibaProfile} alt=""/>
-                                    </div>
-                                    <div className="btc-nama">
-                                        BAYU DARMAMAWAN
-                                    </div>
-                                    <div className="btc-comment">
-                                        <p>Karyawan Swasta Dari Jakarta Barat</p>
-                                        <p>Harga Murah, Bisa nego, top banget deh ajg</p>
-                                    </div>
-                                </div>
-                                <div className="box-testi-card">
-                                    <div className="btc-img">
-                                        <img src={dibaProfile} alt=""/>
-                                    </div>
-                                    <div className="btc-nama">
-                                        BAYU DARMAMAWAN
-                                    </div>
-                                    <div className="btc-comment">
-                                        <p>Karyawan Swasta Dari Jakarta Barat</p>
-                                        <p>Harga Murah, Bisa nego, top banget deh ajg</p>
-                                    </div>
-                                </div>
+                                {render_testimoni()}
                             </div>
 
                         </div>
@@ -611,112 +728,6 @@ export default function Home(){
                     </div>
                 </div>
             </div>
-            {/* <div className="box-home">
-                <div className="box-header">
-                    <div className="bh-left" data-aos="zoom-in"  
-                        data-aos-delay="100"
-                        data-aos-duration="2000"
-                        >
-                        <img src={daihatsulogo} alt=""/>
-                    </div>
-                    <div className="bh-right">
-                        <div className="bh-box-detail" 
-                        data-aos="zoom-in"
-                        data-aos-delay="100"
-                        data-aos-duration="2000"
-                        >
-                            HOME
-                        </div>
-                        <div className="bh-box-detail">
-                        <Dropdown>
-                            <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                PRODUCT
-                            </Dropdown.Toggle>
-
-                            <Dropdown.Menu>
-                                
-                                    <div className="dd-product">
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                        <div className="dd-product-item">
-                                            <img src={rocky} alt=""/>
-                                            <p>DAIHATSU ROCKY</p>
-                                            <p>RP.100.000.000</p>
-                                        </div>
-                                    </div>
-                            </Dropdown.Menu>
-                        </Dropdown>                        
-                        </div>
-                        <div className="bh-box-detail" 
-                        data-aos="zoom-in"
-                        data-aos-delay="100"
-                        data-aos-duration="2000"
-                        >
-                            PRICE LIST
-                        </div>
-                        <div className="bh-box-detail" 
-                        data-aos="zoom-in"
-                        data-aos-delay="100"
-                        data-aos-duration="2000">
-                            EVENT
-                        </div>
-                    </div>
-                </div>
-                <div className="box-body">
-                    <div className="box-advertise">
-                        <Slider {...settings}>
-                            <div className="ba-1">
-                                <img src={advertise1} alt=""/>
-                            </div>
-                            <div className="ba-1">
-                                <img src={advertise2} alt=""/>
-                            </div>
-                            <div className="ba-1">
-                                <img src={advertise3} alt=""/>
-                            </div>
-                            <div className="ba-1">
-                                <img src={advertise4} alt=""/>
-                            </div>
-                        </Slider>
-                    </div>
-                    <div className="box-content">
-                        
-                    </div>
-                </div>
-            </div> */}
 
         </>
     )

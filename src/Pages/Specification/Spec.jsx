@@ -19,8 +19,17 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
     bg_granmax_pu,gray_granmax_pu,full_granmax_pu,interior_granmax_pu,
     bg_sirion,full_sirion,interior_sirion,gray_sirion,
     pdf_granmax_pu,
-    pdf_rocky,
-    pdf_sigra,pdf_sirion,pdf_terios,pdf_xenia
+    pdf_rocky,pdf_luxio,pdf_granmax_mb,
+    pdf_sigra,pdf_sirion,pdf_terios,pdf_xenia,
+    brosur_rocky,brosur_xenia,
+    dimensi_ayla,ban_ayla,kapasitas_duduk_ayla,mesin_ayla,radius_putar_ayla,rem_ayla,suspensi_ayla,transmisi_ayla,sistem_kemudi_ayla,
+    dimensi_sigra,ban_sigra,kapasitas_duduk_sigra,mesin_sigra,radius_putar_sigra,rem_sigra,suspensi_sigra,transmisi_sigra,sistem_kemudi_sigra,
+    dimensi_sirion,ban_sirion,kapasitas_duduk_sirion,mesin_sirion,radius_putar_sirion,rem_sirion,suspensi_sirion,transmisi_sirion,sistem_kemudi_sirion,
+    dimensi_luxio,ban_luxio,kapasitas_duduk_luxio,mesin_luxio,radius_putar_luxio,rem_luxio,suspensi_luxio,transmisi_luxio,sistem_kemudi_luxio,
+    dimensi_terios,ban_terios,kapasitas_duduk_terios,mesin_terios,radius_putar_terios,rem_terios,suspensi_terios,transmisi_terios,sistem_kemudi_terios,
+    dimensi_granmax_mb,ban_granmax_mb,kapasitas_duduk_granmax_mb,mesin_granmax_mb,radius_putar_granmax_mb,rem_granmax_mb,suspensi_granmax_mb,transmisi_granmax_mb,sistem_kemudi_granmax_mb,
+    dimensi_granmax_pu,ban_granmax_pu,kapasitas_duduk_granmax_pu,mesin_granmax_pu,radius_putar_granmax_pu,rem_granmax_pu,suspensi_granmax_pu,transmisi_granmax_pu,sistem_kemudi_granmax_pu
+
     } from '../../Assets/assets' 
 
     var  detail_product = [
@@ -30,8 +39,18 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_rocky,
             gambar_satuan:merah_rocky,
             interior:interior_rocky,
-            full:kuning_rocky,
-            pdf:pdf_rocky
+            full:merah_rocky,
+            pdf:pdf_rocky,
+            brosur:brosur_rocky,
+            dimensi:undefined,
+            ban:undefined,
+            kapasitas_duduk:undefined,
+            mesin:undefined,
+            radius_putar:undefined,
+            rem:undefined,
+            suspensi:undefined,
+            transmisi:undefined,
+            sistem_kemudi:undefined
         },
         {
             nama_mobil : 'AYLA',
@@ -40,7 +59,16 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             gambar_satuan:merah_ayla,
             interior:interior_ayla,
             full:full_ayla,
-            pdf:pdf_sigra
+            pdf:pdf_sigra,
+            dimensi:dimensi_ayla,
+            ban:ban_ayla,
+            kapasitas_duduk:kapasitas_duduk_ayla,
+            mesin:mesin_ayla,
+            radius_putar:radius_putar_ayla,
+            rem:rem_ayla,
+            suspensi:suspensi_ayla,
+            transmisi:transmisi_ayla,
+            sistem_kemudi:sistem_kemudi_ayla
         },
         {
             nama_mobil : 'SIGRA',
@@ -49,7 +77,16 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             gambar_satuan:gray_sigra,
             interior:interior_sigra,
             full:full_sigra,
-            pdf:pdf_sigra
+            pdf:pdf_sigra,
+            dimensi:dimensi_sigra,
+            ban:ban_sigra,
+            kapasitas_duduk:kapasitas_duduk_sigra,
+            mesin:mesin_sigra,
+            radius_putar:radius_putar_sigra,
+            rem:rem_sigra,
+            suspensi:suspensi_sigra,
+            transmisi:transmisi_sigra,
+            sistem_kemudi:sistem_kemudi_sigra
         },
         {
             nama_mobil : 'GRAND NEW XENIA',
@@ -58,7 +95,17 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             gambar_satuan:gray_xenia,
             interior:interior_xenia,
             full:full_xenia,
-            pdf:pdf_xenia
+            pdf:pdf_xenia,
+            brosur:brosur_xenia,
+            dimensi:undefined,
+            ban:undefined,
+            kapasitas_duduk:undefined,
+            mesin:undefined,
+            radius_putar:undefined,
+            rem:undefined,
+            suspensi:undefined,
+            transmisi:undefined,
+            sistem_kemudi:undefined
         },
         {
             nama_mobil : 'ALL NEW TERIOS',
@@ -67,7 +114,16 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             gambar_satuan:gray_terios,
             interior:interior_terios,
             full:full_terios,
-            pdf:pdf_terios
+            pdf:pdf_terios,
+            dimensi:dimensi_terios,
+            ban:ban_terios,
+            kapasitas_duduk:kapasitas_duduk_terios,
+            mesin:mesin_terios,
+            radius_putar:radius_putar_terios,
+            rem:rem_terios,
+            suspensi:suspensi_terios,
+            transmisi:transmisi_terios,
+            sistem_kemudi:sistem_kemudi_terios
         },
         {
             nama_mobil : 'ALL NEW SIRION',
@@ -76,7 +132,16 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             gambar_satuan:gray_sirion,
             interior:interior_sirion,
             full:full_sirion,
-            pdf:pdf_sirion
+            pdf:pdf_sirion,
+            dimensi:dimensi_sirion,
+            ban:ban_sirion,
+            kapasitas_duduk:kapasitas_duduk_sirion,
+            mesin:mesin_sirion,
+            radius_putar:radius_putar_sirion,
+            rem:rem_sirion,
+            suspensi:suspensi_sirion,
+            transmisi:transmisi_sirion,
+            sistem_kemudi:sistem_kemudi_sirion
         },
         {
             nama_mobil : 'LUXIO',
@@ -85,7 +150,16 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             gambar_satuan:polos_luxio,
             interior:interior_luxio,
             full:full_luxio,
-            pdf:pdf_rocky
+            pdf:pdf_luxio,
+            dimensi:dimensi_luxio,
+            ban:ban_luxio,
+            kapasitas_duduk:kapasitas_duduk_luxio,
+            mesin:mesin_luxio,
+            radius_putar:radius_putar_luxio,
+            rem:rem_luxio,
+            suspensi:suspensi_luxio,
+            transmisi:transmisi_luxio,
+            sistem_kemudi:sistem_kemudi_luxio
         },
         {
             nama_mobil : 'GRANDMAX MB',
@@ -94,7 +168,16 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             gambar_satuan:gray_granmax_mb,
             interior:interior_granmax_mb,
             full:full_granmax_mb,
-            pdf:pdf_granmax_pu
+            pdf:pdf_granmax_mb,
+            dimensi:dimensi_granmax_mb,
+            ban:ban_granmax_mb,
+            kapasitas_duduk:kapasitas_duduk_granmax_mb,
+            mesin:mesin_granmax_mb,
+            radius_putar:radius_putar_granmax_mb,
+            rem:rem_granmax_mb,
+            suspensi:suspensi_granmax_mb,
+            transmisi:transmisi_granmax_mb,
+            sistem_kemudi:sistem_kemudi_granmax_mb
         },
         {
             nama_mobil : 'GRANDMAX PU',
@@ -103,7 +186,16 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             gambar_satuan:gray_granmax_pu,
             interior:interior_granmax_pu,
             full:full_granmax_pu,
-            pdf:pdf_granmax_pu
+            pdf:pdf_granmax_pu,
+            dimensi:dimensi_granmax_pu,
+            ban:ban_granmax_pu,
+            kapasitas_duduk:kapasitas_duduk_granmax_pu,
+            mesin:mesin_granmax_pu,
+            radius_putar:radius_putar_granmax_pu,
+            rem:rem_granmax_pu,
+            suspensi:suspensi_granmax_pu,
+            transmisi:transmisi_granmax_pu,
+            sistem_kemudi:sistem_kemudi_granmax_pu
         }
     ]
 
@@ -191,120 +283,97 @@ export default function Specification(){
                     </div>
                 </div>
                 <div className="spec-6-teknis">
-                    <div className="teknis-box">
-                        <p>SPESIFIKASI TEKNIS</p>
-                        <Accordion>
-                            <Accordion.Item eventKey="0">
-                                <Accordion.Header>Dimensi</Accordion.Header>
-                                <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="1">
-                                <Accordion.Header>Kapasitas Tempat Duduk</Accordion.Header>
-                                <Accordion.Body >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="2">
-                                <Accordion.Header>Radius Putar Minimum</Accordion.Header>
-                                <Accordion.Body >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="3">
-                                <Accordion.Header>Mesin</Accordion.Header>
-                                <Accordion.Body >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="4">
-                                <Accordion.Header>Transmisi</Accordion.Header>
-                                <Accordion.Body >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="5">
-                                <Accordion.Header>Sistem Kemudi</Accordion.Header>
-                                <Accordion.Body >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="6">
-                                <Accordion.Header>Rem</Accordion.Header>
-                                <Accordion.Body >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                            <Accordion.Item eventKey="7">
-                                <Accordion.Header>Suspensi</Accordion.Header>
-                                <Accordion.Body >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
-                                </Accordion.Body>
-                            </Accordion.Item>
+                        {
+                            data_render.ban === undefined ? 
+                            <>
+                                <div className="brosur_box">
+                                    <p>SPESIFIKASI TEKNIS</p>
+                                    <img src={data_render.brosur} alt="" />
+                                </div>
 
-                            <Accordion.Item eventKey="8">
-                                <Accordion.Header>Ban</Accordion.Header>
-                                <Accordion.Body >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                est laborum.
-                                </Accordion.Body>
-                            </Accordion.Item>
-                        </Accordion>
-                    </div>
+                            </>
+                            :
+                            <>
+                            <div className="teknis-box">
+                                <p>SPESIFIKASI TEKNIS</p>
+                                    <Accordion>
+                                    <Accordion.Item eventKey="0">
+                                        <Accordion.Header>Dimensi</Accordion.Header>
+                                        <Accordion.Body>
+                                            <div className="dimensi_mobil">
+                                                <img src={data_render.dimensi} alt=""  />
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header>Kapasitas Tempat Duduk</Accordion.Header>
+                                        <Accordion.Body >
+                                            <div className="dimensi_mobil">
+                                                <img src={data_render.kapasitas_duduk} alt=""  />
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>Radius Putar Minimum</Accordion.Header>
+                                        <Accordion.Body >
+                                            <div className="dimensi_mobil">
+                                                <img src={data_render.radius_putar} alt=""  />
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>Mesin</Accordion.Header>
+                                        <Accordion.Body >
+                                        <div className="dimensi_mobil">
+                                                <img src={data_render.mesin} alt=""  />
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="4">
+                                        <Accordion.Header>Transmisi</Accordion.Header>
+                                        <Accordion.Body >
+                                        <div className="dimensi_mobil">
+                                                <img src={data_render.transmisi} alt=""  />
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="5">
+                                        <Accordion.Header>Sistem Kemudi</Accordion.Header>
+                                        <Accordion.Body >
+                                            <div className="dimensi_mobil">
+                                                <img src={data_render.sistem_kemudi} alt=""  />
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="6">
+                                        <Accordion.Header>Rem</Accordion.Header>
+                                        <Accordion.Body >
+                                        <div className="dimensi_mobil">
+                                                <img src={data_render.rem} alt=""  />
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="7">
+                                        <Accordion.Header>Suspensi</Accordion.Header>
+                                        <Accordion.Body >
+                                            <div className="dimensi_mobil">
+                                                <img src={data_render.suspensi} alt=""  />
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="8">
+                                        <Accordion.Header>Ban</Accordion.Header>
+                                        <Accordion.Body >
+                                            <div className="dimensi_mobil">
+                                                <img src={data_render.ban} alt=""  />
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                    </Accordion>
+                            </div>
+                            </>
+                        }
                 </div> 
 
         </>

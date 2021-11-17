@@ -22,7 +22,7 @@ function App() {
       <Route exact path='/' component={Home}/>
       <Route exact path='/Specification/:stringify_dp' component={Spec}/>
       <Route exact path='/header' component={Header}/>
-      <Route exact path='/event' component={Event} />
+      <Route exact path='/promo' component={Event} />
       <Route exact path='/detail_event/:detail' component={Detail_event} />
       <Route exact path='/contact' component={Contact}/>
     </Switch>
