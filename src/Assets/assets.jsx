@@ -22,7 +22,7 @@ export {default as full_sirion} from './SIRION/sirion_full.jpeg';
 export {default as interior_sirion} from './SIRION/interior_sirion.jpeg';
 
 export {default as bg_luxio} from './LUXIO/luxio_background.jpeg';
-export {default as polos_luxio} from './LUXIO/luxio_polos.webp';
+export {default as polos_luxio} from './LUXIO/luxio_polos.png';
 export {default as full_luxio} from './LUXIO/luxio_full.jpeg';
 export {default as interior_luxio} from './LUXIO/interior_luxio.png';
 export {default as belakang_luxio} from './LUXIO/luxio_belakang.png';
