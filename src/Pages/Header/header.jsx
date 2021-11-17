@@ -149,6 +149,9 @@ export default function Header(){
         $('.dropdown .dropdown-menu').removeClass('show')
     }
 
+    const close_all_modal =()=>{
+        $('.dropdown .dropdown-menu').removeClass('show')
+    }
     
     return (
 
@@ -198,7 +201,7 @@ export default function Header(){
                         
                         <Dropdown>
                             <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                <FaBars id="icon-menu-bar-home"/>
+                                <FaBars id="icon-menu-bar-home" onClick={close_all_modal()}/>
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu className="dropdown_menu_mobile">
