@@ -1,43 +1,52 @@
-import React, { Component } from 'react';
+import React, { Component ,useState} from 'react';
 import './event.css'
 import Header  from '../Header/header'
 import {AiFillCopyrightCircle} from 'react-icons/ai'
 import {polos_rocky} from '../../Assets/assets'
 import { Link, Redirect } from 'react-router-dom';
-
+import {bg_rocky,bg_ayla} from '../../Assets/assets'
 export default function Event(){
 
 
+   
+    
     var detail_event = 'bayu ingin makan karena laper'
+    const all_promo = [
+        {
+            judul_promo:'XENIA DP HANYA 2JUTA',
+            isi_promo:'Segera datang ke showroom kami di jakarta barat,  dikarenakan adanya promo xenia hanya 2 juta rupiah',
+            img_promo:bg_ayla
+        },
+        {
+            judul_promo:'ALL XENIA DP HANYA 2JUTA',
+            isi_promo:'Segera datang ke showroom kami di jakarta barat,  dikarenakan adanya promo xenia hanya 2 juta rupiah',
+            img_promo:bg_ayla
+        }
+    ]
+    
 
+    const render_promo=()=>{
+        return all_promo.map((val,index)=>{
+            return (
+                <>
+                    <Link to={{pathname:`/detail_event/${val.judul_promo}`}} className="box_event_1">
+                        <div className="box_img_event_1">
+                            <img src={val.img_promo} alt="" />
+                        </div>
+                        <p>{val.judul_promo}</p>
+                        <p>{val.isi_promo}</p>
+                    </Link>
+                </>
+            )
+        })
+    }
     return (
         <>
             <div className="container_event">
                 <Header/>
                 <div className="main_event">
                     <div className="cont_box_event container">
-                        <Link to={{pathname:`/detail_event/${detail_event}`}} className="box_event_1">
-                            <div className="box_img_event_1">
-                                <img src={polos_rocky} alt="" />
-                            </div>
-                            <p>DAIHATSU AYLA SPESIAL PROMO KHUSU BULAN INI DP 7 JUTA / ANGSURAN 2,2 JUTA</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptatibus iure minus eveniet officia atque enim blanditiis, quae perferendis esse illum vel totam nihil repellat eligendi sunt, accusamus asperiores cupiditate!</p>
-                        </Link>
-                        <Link className="box_event_1">
-                            <div className="box_img_event_1">
-                                <img src={polos_rocky} alt="" />
-                            </div>
-                            <p>INI JUDUL COK HARUS PANJANG KALO BISA</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptatibus iure minus eveniet officia atque enim blanditiis, quae perferendis esse illum vel totam nihil repellat eligendi sunt, accusamus asperiores cupiditate!</p>
-                        </Link>
-                        <Link className="box_event_1">
-                            <div className="box_img_event_1">
-                                <img src={polos_rocky} alt="" />
-                            </div>
-                            <p>INI JUDUL COK HARUS PANJANG KALO BISA</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, voluptatibus iure minus eveniet officia atque enim blanditiis, quae perferendis esse illum vel totam nihil repellat eligendi sunt, accusamus asperiores cupiditate!</p>
-                        </Link>
-                        
+                        {render_promo()}
                     </div>
                 </div>
                 <div className="body-content-6">
