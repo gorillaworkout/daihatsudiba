@@ -48,9 +48,9 @@ export default function Contact(){
                             </a>
                         </a>
                         <a href="#">
-                            <a className="kotak3" href="mailto:darmawanbayu1@gmail.com" style={{textDecoration:'none'}} target="_blank">
+                            <a className="kotak3" href="mailto:dibafahri2@gmail.com" style={{textDecoration:'none'}} target="_blank">
                                 <AiOutlineMail className="icon_contact"/>
-                                <p>dibewe@gmail.com</p>
+                                <p>dibafahri2@gmail.com</p>
                             </a>
                         </a>
                         
