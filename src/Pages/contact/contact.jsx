@@ -1,10 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component,useState } from 'react';
 import './contact.css'
 import {GoLocation} from 'react-icons/go'
 import {AiOutlineMail,AiFillPhone} from 'react-icons/ai'
 import Header from '../Header/header'
 export default function Contact(){
 
+    const [name,setName]=useState('')
+    const [email,setEmail]=useState('')
+    const [phone,setPhone]=useState('')
+    const [message,setMessage]=useState('')
+    const [final_message, setFinal_Message]=useState('')
+    
+
+
+    const send_message_to_wa =()=>{
+        // var res = `Hallo bayu, jadi ${nama}, bisa pergi jam ${jam} ke ${kemana},  mau makan ${makan} aja. `
+        
+        var res = `Hallo Bapak Diba, saya ${name}, email saya ${email}, nomor hp saya ${phone}, ${message}`
+        var uri_res = encodeURIComponent(res);
+        setFinal_Message(uri_res)
+        // alert('jalam')
+        console.log(name,email,phone,message)
+    }
     return (
        <>
        <div className="biggest_box_container">
@@ -25,16 +42,16 @@ export default function Contact(){
                             </div>
                         </a>				
                         <a href="#">
-                            <div className="kotak2">
+                            <a className="kotak2"  href="tel:+6285887854544" style={{textDecoration:'none'}} target="_blank">
                                 <AiFillPhone className="icon_contact" />
                                 <p>+62858 8785 4544</p>
-                            </div>
+                            </a>
                         </a>
                         <a href="#">
-                            <div className="kotak3">
+                            <a className="kotak3" href="mailto:darmawanbayu1@gmail.com" style={{textDecoration:'none'}} target="_blank">
                                 <AiOutlineMail className="icon_contact"/>
                                 <p>dibewe@gmail.com</p>
-                            </div>
+                            </a>
                         </a>
                         
                     </div>
@@ -48,20 +65,20 @@ export default function Contact(){
                         <div className="form">
                             <div className="left">
                                 <p className="p1">Your Name</p>
-                                <input type="text" name="username"/>
+                                <input type="text" name="username" onChange={(e)=>setName(e.target.value)}/>
                                 <p className="p2">Mail</p>
-                                <input type="text" name="email	"/>
+                                <input type="text" name="email" onChange={(e)=>setEmail(e.target.value)}/>
                                 <p className="p3">Phone</p>
-                                <input type="text" name="phone"/>
+                                <input type="text" name="phone" onChange={(e)=>setPhone(e.target.value)}/>
                             </div>
                             <div className="right">
                                 <p className="p4">Message</p>
-                                <input type="text" name=""/>
+                                <input type="text" name="" onChange={(e)=>setMessage(e.target.value)}/>
                             </div>
                         </div>
-                        <div className="serve1">
+                        <a href={`https://wa.me/+6285887854544/?text=${final_message}`} style={{textDecoration:'none'}} className="serve1" onClick={send_message_to_wa}>
                             <button>Send Message</button>	
-                        </div>
+                        </a>
                     </div>
                     
                 </div>

@@ -745,6 +745,7 @@ height:550px;
     width:700px !important;
     height:330px !important;
     z-index:10 !important;
+    overflow: scroll;;
 }
 
 

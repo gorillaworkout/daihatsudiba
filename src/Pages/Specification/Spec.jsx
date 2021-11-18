@@ -22,6 +22,7 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
     pdf_rocky,pdf_luxio,pdf_granmax_mb,
     pdf_sigra,pdf_sirion,pdf_terios,pdf_xenia,
     brosur_rocky,brosur_xenia,
+    gray_new_xenia,interior_new_xenia,bg_new_xenia,green_new_xenia,
     dimensi_ayla,ban_ayla,kapasitas_duduk_ayla,mesin_ayla,radius_putar_ayla,rem_ayla,suspensi_ayla,transmisi_ayla,sistem_kemudi_ayla,
     dimensi_sigra,ban_sigra,kapasitas_duduk_sigra,mesin_sigra,radius_putar_sigra,rem_sigra,suspensi_sigra,transmisi_sigra,sistem_kemudi_sigra,
     dimensi_sirion,ban_sirion,kapasitas_duduk_sirion,mesin_sirion,radius_putar_sirion,rem_sirion,suspensi_sirion,transmisi_sirion,sistem_kemudi_sirion,
@@ -33,6 +34,25 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
     } from '../../Assets/assets' 
 
     var  detail_product = [
+        {
+            nama_mobil : 'NEW XENIA',
+            harga:'190.900.000',
+            background:bg_new_xenia,
+            gambar_satuan:gray_new_xenia,
+            interior:interior_new_xenia,
+            full:green_new_xenia,
+            pdf:pdf_xenia,
+            brosur:brosur_xenia,
+            dimensi:undefined,
+            ban:undefined,
+            kapasitas_duduk:undefined,
+            mesin:undefined,
+            radius_putar:undefined,
+            rem:undefined,
+            suspensi:undefined,
+            transmisi:undefined,
+            sistem_kemudi:undefined
+        },
         {
             nama_mobil : 'ROCKY',
             harga:'178.900.000',
@@ -107,6 +127,7 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             transmisi:undefined,
             sistem_kemudi:undefined
         },
+        
         {
             nama_mobil : 'ALL NEW TERIOS',
             harga:'205.100.000',
@@ -206,6 +227,7 @@ export default function Specification(){
     const [data_render,setData_render]=useState([])
     useEffect(()=>{
         var filtering_item = detail_product.filter((val,index)=>{
+            console.log(val.nama_mobil, stringify_dp , val.nama_mobil === stringify_dp,typeof stringify_dp, typeof val.nama_mobil )
             if(val.nama_mobil === stringify_dp){
                 console.log(val)
                 console.log(stringify_dp)

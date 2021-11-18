@@ -1,6 +1,13 @@
+export {default as gray_new_xenia} from './new_xenia/satuan_gray_new_xenia.png'
+export {default as interior_new_xenia} from './new_xenia/interior_new_xenia.jpeg'
+export {default as bg_new_xenia} from './new_xenia/background_new_xenia.png'
+export {default as green_new_xenia} from './new_xenia/satuan_green_new_xenia.png'
+
+
 export {default as bg_rocky} from './ROCKY/rocky_background.jpeg';
 export {default as kuning_rocky} from './ROCKY/rocky_kuning.png';
 export {default as merah_rocky} from './ROCKY/rocky_merah.png';
+export {default as new_merah_rocky} from './ROCKY/new_rocky_merah.png';
 export {default as polos_rocky} from './ROCKY/rocky_polos.webp';
 export {default as interior_rocky} from './ROCKY/interior_rocky.jpeg';
 export {default as brosur_rocky} from './ROCKY/brosur_rocky.png';

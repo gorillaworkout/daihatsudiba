@@ -35,7 +35,8 @@ bg_xenia,gray_xenia,full_xenia,interior_xenia,
 bg_terios,gray_terios,full_terios,interior_terios,
 bg_granmax_mb,full_granmax_mb,gray_granmax_mb,interior_granmax_mb,
 bg_granmax_pu,gray_granmax_pu,full_granmax_pu,interior_granmax_pu,
-bg_sirion,full_sirion,interior_sirion,gray_sirion
+bg_sirion,full_sirion,interior_sirion,gray_sirion,
+gray_new_xenia,interior_new_xenia,bg_new_xenia,green_new_xenia
 } from '../../Assets/assets' 
 import { Link2 } from 'react-feather';
 
@@ -50,6 +51,14 @@ export default function Header(){
         
     },[])
     var  detail_product = [
+        {
+            nama_mobil : 'NEW XENIA',
+            harga : '190.900.000',
+            background:bg_new_xenia,
+            gambar_satuan:gray_new_xenia,
+            interior:interior_new_xenia,
+            full:green_new_xenia
+        },
         {
             nama_mobil : 'ROCKY',
             harga:'178.900.000',
@@ -130,6 +139,7 @@ export default function Header(){
 
     const render_header=()=>{
         return detail_product.map((val,index)=>{
+            console.log(val.nama_mobil,'142')
             stringify_dp = val.nama_mobil
             // console.log(stringify_dp)
             return (
