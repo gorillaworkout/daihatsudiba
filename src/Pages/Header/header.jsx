@@ -139,7 +139,7 @@ export default function Header(){
 
     const render_header=()=>{
         return detail_product.map((val,index)=>{
-            console.log(val.nama_mobil,'142')
+            // console.log(val.nama_mobil,'142')
             stringify_dp = val.nama_mobil
             // console.log(stringify_dp)
             return (
@@ -155,7 +155,7 @@ export default function Header(){
     }
 
     const close_modal=()=>{
-        console.log($('.dopdown .dropdown-menu'))
+        // console.log($('.dopdown .dropdown-menu'))
         $('.dropdown .dropdown-menu').removeClass('show')
     }
 

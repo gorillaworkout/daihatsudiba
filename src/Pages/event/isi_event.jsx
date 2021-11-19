@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component,useState } from 'react';
 import './event.css'
 import {AiFillCopyrightCircle} from 'react-icons/ai'
 import {polos_rocky} from '../../Assets/assets'
 import { Link, Redirect } from 'react-router-dom';
 import Header from '../Header/header'
+import { useParams } from "react-router-dom";
 
 export default function Detail_function(){
 
+    const {detail}=useParams()
+    const [data_render, setData_render]=useState([])
+    console.log(detail)
 
     return (
         <>

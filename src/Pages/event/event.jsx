@@ -27,6 +27,11 @@ export default function Event(){
 
     const render_promo=()=>{
         return all_promo.map((val,index)=>{
+            var obj = JSON.stringify([
+                val.judul_promo,
+                val.isi_promo,
+                val.img_promo
+            ])
             return (
                 <>
                     <Link to={{pathname:`/detail_event/${val.judul_promo}`}} className="box_event_1">

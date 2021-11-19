@@ -223,14 +223,14 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
 
 export default function Specification(){
     const {stringify_dp} = useParams()
-    console.log(stringify_dp)
+    // console.log(stringify_dp)
     const [data_render,setData_render]=useState([])
     useEffect(()=>{
         var filtering_item = detail_product.filter((val,index)=>{
-            console.log(val.nama_mobil, stringify_dp , val.nama_mobil === stringify_dp,typeof stringify_dp, typeof val.nama_mobil )
+            // console.log(val.nama_mobil, stringify_dp , val.nama_mobil === stringify_dp,typeof stringify_dp, typeof val.nama_mobil )
             if(val.nama_mobil === stringify_dp){
-                console.log(val)
-                console.log(stringify_dp)
+                // console.log(val)
+                // console.log(stringify_dp)
                 setData_render(val)
             }
         })
