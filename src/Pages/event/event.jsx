@@ -4,7 +4,7 @@ import Header  from '../Header/header'
 import {AiFillCopyrightCircle} from 'react-icons/ai'
 import {polos_rocky} from '../../Assets/assets'
 import { Link, Redirect } from 'react-router-dom';
-import {bg_rocky,bg_ayla} from '../../Assets/assets'
+import {bg_rocky,bg_ayla,bg_sigra,bg_sirion, bg_luxio,green_new_xenia} from '../../Assets/assets'
 export default function Event(){
 
 
@@ -15,13 +15,32 @@ export default function Event(){
         {
             judul_promo:'XENIA DP HANYA 2JUTA',
             isi_promo:'Segera datang ke showroom kami di jakarta barat,  dikarenakan adanya promo xenia hanya 2 juta rupiah',
-            img_promo:bg_ayla
+            img_promo:green_new_xenia
         },
+        {
+            judul_promo:'ALL XENIA DP HANYA 2JUTA',
+            isi_promo:'Segera datang ke showroom kami di jakarta barat,  dikarenakan adanya promo xenia hanya 2 juta rupiah',
+            img_promo:bg_sigra
+        }
+        ,
+        {
+            judul_promo:'ALL XENIA DP HANYA 2JUTA',
+            isi_promo:'Segera datang ke showroom kami di jakarta barat,  dikarenakan adanya promo xenia hanya 2 juta rupiah',
+            img_promo:bg_sirion
+        }
+        ,
+        {
+            judul_promo:'ALL XENIA DP HANYA 2JUTA',
+            isi_promo:'Segera datang ke showroom kami di jakarta barat,  dikarenakan adanya promo xenia hanya 2 juta rupiah',
+            img_promo:bg_luxio
+        }
+        ,
         {
             judul_promo:'ALL XENIA DP HANYA 2JUTA',
             isi_promo:'Segera datang ke showroom kami di jakarta barat,  dikarenakan adanya promo xenia hanya 2 juta rupiah',
             img_promo:bg_ayla
         }
+
     ]
     
 
@@ -34,13 +53,13 @@ export default function Event(){
             ])
             return (
                 <>
-                    <Link to={{pathname:`/detail_event/${val.judul_promo}`}} className="box_event_1">
+                    <div className="box_event_1">
                         <div className="box_img_event_1">
                             <img src={val.img_promo} alt="" />
                         </div>
                         <p>{val.judul_promo}</p>
                         <p>{val.isi_promo}</p>
-                    </Link>
+                    </div>
                 </>
             )
         })

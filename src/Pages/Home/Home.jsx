@@ -86,43 +86,43 @@ export default function Home(){
                     "gambar":testi_evan,
                     "nama_customer":'Evan',
                     "pekerjaan":"Karyawan Swasta",
-                    "comment":"kntl yang indah"
+                    "comment":"Pelayanan ramah service tepat sesuai rencana bahkan dapat discount dan bonus banyak, bisa di jadikan recommend mas Diba nya"
                 },
                 {
                     "gambar":testi_jonathan,
                     "nama_customer":'Jonathan',
                     "pekerjaan":"Karyawan Swasta",
-                    "comment":"kntl yang indah"
+                    "comment":"Pelayanan ramah service tepat sesuai rencana bahkan dapat discount dan bonus banyak, bisa di jadikan recommend mas Diba nya"
                 },
                 {
                     "gambar":testi_pt_binaangkasa,
                     "nama_customer":'PT Bina Angkasa',
                     "pekerjaan":"Karyawan Swasta",
-                    "comment":"kntl yang indah"
+                    "comment":"Pelayanan ramah service tepat sesuai rencana bahkan dapat discount dan bonus banyak, bisa di jadikan recommend mas Diba nya"
                 },
                 {
                     "gambar":testi_rahmat,
                     "nama_customer":'rahmat',
                     "pekerjaan":"Karyawan Swasta",
-                    "comment":"kntl yang indah"
+                    "comment":"Pelayanan ramah service tepat sesuai rencana bahkan dapat discount dan bonus banyak, bisa di jadikan recommend mas Diba nya"
                 },
                 {
                     "gambar":testi_rizal,
                     "nama_customer":'Rizal',
                     "pekerjaan":"Karyawan Swasta",
-                    "comment":"kntl yang indah"
+                    "comment":"Pelayanan sangat Cepat"
                 },
                 {
                     "gambar":testi_siti_alminah,
                     "nama_customer":'Siti Alminah',
                     "pekerjaan":"Karyawan Swasta",
-                    "comment":"kntl yang indah"
+                    "comment":"Bisa nego harga lagi"
                 },
                 {
                     "gambar":testi_yanti,
                     "nama_customer":'Yanti',
                     "pekerjaan":"Karyawan Swasta",
-                    "comment":"kntl yang indah"
+                    "comment":"Pelayanan ramah service tepat sesuai rencana bahkan dapat discount dan bonus banyak, bisa di jadikan recommend mas Diba nya"
                 },
             ]
         }
@@ -608,7 +608,7 @@ export default function Home(){
                                     </a>
                                 </div> 
                                 <div className="box_for_socmed-4 hover-email">
-                                    <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
+                                    <a href="mailtodibafahri2@gmail.com:" target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiOutlineMail className="icon-wa"/>
                                         </div>
@@ -616,7 +616,7 @@ export default function Home(){
                                     </a>
                                 </div> 
                                 <div className="box_for_socmed-4 hover-twitter">
-                                    <a href="#https://www.google.com" target="_blank" className="a-href-link-wa">
+                                    <a href="https://www.linkedin.com/in/diba-fahrika-1213a1172/" target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiFillLinkedin className="icon-wa"/>
                                         </div>
@@ -629,7 +629,7 @@ export default function Home(){
                             </div>
                             <div className="bc-3-box">
                                 <div className="box_for_socmed-4 hover-ig">
-                                    <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
+                                    <a href="https://www.instagram.com/dibafahrika/" target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiFillInstagram className="icon-wa"/>
                                         </div>
@@ -637,7 +637,7 @@ export default function Home(){
                                     </a>
                                 </div> 
                                 <div className="box_for_socmed-4 hover-fb">
-                                    <a href="https://www.google.com" target="_blank" className="a-href-link-wa">
+                                    <a href="https://www.facebook.com/Diba.Fahri96" target="_blank" className="a-href-link-wa">
                                         <div className="img-logo">
                                             <AiFillFacebook className="icon-wa"/>
                                         </div>
