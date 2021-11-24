@@ -5,6 +5,7 @@ export {default as green_new_xenia} from './new_xenia/satuan_green_new_xenia.png
 
 
 export {default as bg_rocky} from './ROCKY/rocky_background.jpeg';
+export {default as iklan_rocky} from './ROCKY/iklan_rocky.png';
 export {default as kuning_rocky} from './ROCKY/rocky_kuning.png';
 export {default as merah_rocky} from './ROCKY/rocky_merah.png';
 export {default as new_merah_rocky} from './ROCKY/new_rocky_merah.png';
@@ -17,6 +18,7 @@ export {default as kuning_ayla} from './AYLA/ayla_polos.png';
 export {default as merah_ayla} from './AYLA/ayla_polos_satuan_merah.png';
 export {default as full_ayla} from './AYLA/full_ayla.jpeg';
 export {default as interior_ayla} from './AYLA/interior-ayla.jpeg';
+export {default as new_merah_ayla} from './AYLA/merah_ayla.png';
 
 export {default as dimensi_ayla} from './AYLA/dimensi_ayla.png';
 export {default as ban_ayla} from './AYLA/ban_ayla.png';
@@ -153,6 +155,6 @@ export {default as testi_jonathan} from './testimoni/jonathan.jpeg'
 export {default as testi_pt_binaangkasa} from './testimoni/pt_binaangkasa.jpeg'
 export {default as testi_rahmat} from './testimoni/rahmat.jpeg'
 export {default as testi_rizal} from './testimoni/rizal.jpeg'
-export {default as testi_siti_alminah} from './testimoni/rizal.jpeg'
+export {default as testi_siti_alminah} from './testimoni/siti_alminah.jpeg'
 export {default as testi_yanti} from './testimoni/yanti.jpeg'
 

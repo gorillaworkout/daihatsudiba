@@ -1,5 +1,6 @@
 import React, { useEffect,useState } from 'react';
 import './specs.css'
+import '../../Pages/webversion.css'
 import banner_ayla from '../../Assets/banner-ayla.jpeg'
 import Header from '../Header/header'
 // import background_mobil from '../../Assets/background-mobil.jpeg'
@@ -18,10 +19,10 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
     bg_granmax_mb,full_granmax_mb,gray_granmax_mb,interior_granmax_mb,
     bg_granmax_pu,gray_granmax_pu,full_granmax_pu,interior_granmax_pu,
     bg_sirion,full_sirion,interior_sirion,gray_sirion,
-    pdf_granmax_pu,
+    pdf_granmax_pu,new_merah_ayla,
     pdf_rocky,pdf_luxio,pdf_granmax_mb,
     pdf_sigra,pdf_sirion,pdf_terios,pdf_xenia,
-    brosur_rocky,brosur_xenia,
+    brosur_rocky,brosur_xenia,iklan_rocky,
     gray_new_xenia,interior_new_xenia,bg_new_xenia,green_new_xenia,
     dimensi_ayla,ban_ayla,kapasitas_duduk_ayla,mesin_ayla,radius_putar_ayla,rem_ayla,suspensi_ayla,transmisi_ayla,sistem_kemudi_ayla,
     dimensi_sigra,ban_sigra,kapasitas_duduk_sigra,mesin_sigra,radius_putar_sigra,rem_sigra,suspensi_sigra,transmisi_sigra,sistem_kemudi_sigra,
@@ -59,7 +60,7 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_rocky,
             gambar_satuan:merah_rocky,
             interior:interior_rocky,
-            full:merah_rocky,
+            full:kuning_rocky,
             pdf:pdf_rocky,
             brosur:brosur_rocky,
             dimensi:undefined,
@@ -78,7 +79,7 @@ import {bg_rocky,kuning_rocky,merah_rocky,interior_rocky,
             background:bg_ayla,
             gambar_satuan:merah_ayla,
             interior:interior_ayla,
-            full:full_ayla,
+            full:new_merah_ayla,
             pdf:pdf_sigra,
             dimensi:dimensi_ayla,
             ban:ban_ayla,
